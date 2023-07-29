@@ -38,7 +38,7 @@ const Login = () => {
                         
                         {/* <p> We are here to ensure that your Hawaiian dream becomes a reality. Join us on this 
                             incredible journey to experience the wonders of Hawaii. </p> */}
-                            <p>Mahalo(Thank you) for visiting our site!</p>
+                            
                             <h1>Mahalo</h1>
                     </div>
         

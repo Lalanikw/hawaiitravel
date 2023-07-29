@@ -1,25 +1,27 @@
-import logo from './logo.png';
-import './App.css';
+import React from 'react';
+import { Routes, Route, BrowserRouter} from 'react-router-dom';
+import Nav from './components/Nav';
+import Home from './pages/Home';
+import Footer from './components/footer';
+import Login from './pages/Login';
+import Explore from './pages/Explore';
+import Sites from './pages/Sites';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" width="20%" />
-        <p>
-          Hawaii Landing
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Aloha!
-        </a>
-      </header>
-    </div>
+   <>
+   <BrowserRouter>
+    <Nav/>
+    <Routes>
+        <Route index element={<Home/>} />
+        <Route path="Explore" element={<Explore/>}/>
+        <Route path="Login" element={<Login/>}/>
+        <Route path="Sites" element={<Sites/>}/>
+    </Routes>
+    <Footer/>
+   </BrowserRouter>
+   </>
   );
-}
+};
 
 export default App;

@@ -184,24 +184,11 @@ p {
   font-weight: 450;
 }
 
-strong {
-  font-size: 1rem;
-  font-family: var(--secondary-font);
-  font-weight: 600;
-}
-
 a {
   text-decoration: none;
   color: var(--highlight-dark-color);
   font-family: var(--secondary-font);
   font-weight: 550;
-}
-
-.title {
-  background: linear-gradient(to bottom, #04362f, #eeee1b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: var(--secondary-font);
 }
 
 a:hover {
@@ -309,7 +296,6 @@ a:hover {
   height: 12vh;
   background-color:#a4d5f4eb;
 }
-
 /* .navlogo {
   flex:1;
   display: flex;

@@ -27,7 +27,7 @@ const Login = () => {
     }
   
       return (
-        <div className="contactus-section">
+        <div className="contactus-section p-1">
             <div className="login text-center ">
                 
                 <div className="Login-box grid-2 ">
@@ -39,6 +39,7 @@ const Login = () => {
                         {/* <p> We are here to ensure that your Hawaiian dream becomes a reality. Join us on this 
                             incredible journey to experience the wonders of Hawaii. </p> */}
                             <p>Mahalo(Thank you) for visiting our site!</p>
+                            <h1>Mahalo</h1>
                     </div>
         
                     <div>

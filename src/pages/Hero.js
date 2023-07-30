@@ -1,4 +1,4 @@
-
+import koko from "./koko.JPG";
 
 const Hero = () => {
     return (

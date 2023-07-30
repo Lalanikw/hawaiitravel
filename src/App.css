@@ -134,19 +134,19 @@
 /* Grid properties */
 .grid-2 {
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   grid-template-columns: 1fr 1fr;
 }
 
 .grid-3 {
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .grid-4 {
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 0.2fr));
 }
 
@@ -195,88 +195,6 @@ a:hover {
   color: var(--on-primary-color);
 }
 
-.btn-a  {
-  background-color: var(--on-primary-color);
-  border-radius: var(--radius);
-  color: var(--highlight-dark-color);
-  text-align: center;
-  padding: 0.5rem 2rem;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 500;
-  transition: .3s;
-  height: max-content;
-  box-shadow: var(--shadow);
-  border: none;
-}
-
-.btn-b  {
-  background-color: var(--on-primary-color);
-  border-radius: var(--radius);
-  color: var(--highlight-dark-color);
-  text-align: center;
-  padding: 0.5rem 2rem;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 500;
-  transition: .3s;
-  height: max-content;
-  box-shadow: var(--shadow);
-  border: none;
-}
-
-.btn-c  {
-  background-color: var(--on-primary-color);
-  border-radius: var(--radius);
-  color: var(--highlight-dark-color);
-  text-align: center;
-  padding: 0.5rem 2rem;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 500;
-  transition: .3s;
-  height: max-content;
-  box-shadow: var(--shadow);
-  border: none;
-}
-
-.btn-a:hover {
-  background-color: var(--highlight-dark-color);
-  border-radius: var(--radius);
-  color: var(--highlight-light-color);
-  text-align: center;
-  padding: 0.5rem 2rem;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 500;
-  height: max-content;
-  box-shadow: var(--shadow)
-}
-.btn-b:hover {
-  background-color: var(--highlight-dark-color);
-  border-radius: var(--radius);
-  color: var(--highlight-light-color);
-  text-align: center;
-  padding: 0.5rem 2rem;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 500;
-  height: max-content;
-  box-shadow: var(--shadow)
-}
-.btn-c:hover {
-  background-color: var(--highlight-dark-color);
-  border-radius: var(--radius);
-  color: var(--highlight-light-color);
-  text-align: center;
-  padding: 0.5rem 2rem;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 500;
-  height: max-content;
-  box-shadow: var(--shadow)
-}
-
 .btn:disabled {
   background-color: var(--highlight-light-color);
   border-radius: var(--radius);
@@ -306,7 +224,7 @@ a:hover {
 .topnav {
   display: flex;
   justify-content: center;
-  padding-bottom: 1%;
+  padding-bottom: 1vh;
   padding-top: 3vh;
 }
 
@@ -325,9 +243,9 @@ a:hover {
 
 /*Hiro Section*/
 .hiro-section  {
-  background-image:url(./pages/koko.JPG);
-  height: 76vh;
+  height: 50vh;
   background-size: cover;
+  background-image: url(./pages/koko.JPG);
 }
 
 .hiro-section h1 {
@@ -338,39 +256,12 @@ a:hover {
   font-size: 3.4rem;
 }
 
-.hiro-details-left button {
-  padding: 3%;
-}
-
-.hiro-details-right button {
-  padding:2%;
-}
-
 /*Explore*/
 .Explore-section {
   background-image: url(./pages/water.jpg);
-  height: 76vh;
+  height: 50vh;
   background-size: cover;
 }
-.dot-navigation {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-.dot-nav_item {
-  border-radius: 50%;
-  height: 2rem;
-  width: 2rem;
-  background-color: transparent;
-  border: 1px solid #d1d5db;
-  margin: 0 0.25rem;
-}
-
-.dot-nav_item--active {
-  background-color: #d1d5db;
-}
-
 
 /* Footer css properties */
 .footer-section {
@@ -383,12 +274,11 @@ a:hover {
 .flex-container {
   list-style: none;
   display: flex;
-  padding-left: 3vh;
 }
 
 .flex-container img {
   filter:grayscale(100%);
-  width: 6vh;
+  width: 4vh;
 }
 
 .copyright p {
@@ -399,7 +289,8 @@ a:hover {
 .contactus-section {
   background-image: url(./pages/sunset.JPG);
   background-size: cover;
-  height: 76vh;
+  height: 60vh;
+  padding-bottom: 10vh;
 }
 
 .Login-box p {
@@ -447,21 +338,40 @@ form {
 
 @media screen and (max-width: 1007px) and (min-width: 641px){
   /*tablet */
-  .hiro-section h1 {
-    font-size: 2.8rem;
-  }
-  .copyright p {
-    font-size: 1.2rem;
-  }
-  .Login-box p {
-    font-size: 1.5rem;
-    padding: 1vw;
-    padding-top: 1vh;
-  }
-  /*footer*/
-  .flex-container {
-    padding-left: 2vh;
-  }
+
+
+  /*Hiro Section*/
+.hiro-section  {
+  height: 40vh;
+}
+
+.hiro-section h1 {
+  font-size: 2.5rem;
+}
+
+/*Explore*/
+.Explore-section {
+  height: 40vh;
+}
+
+/* Footer css properties */
+
+.copyright p {
+  font-size: 1.4rem;
+}
+
+/*contactus*/
+.contactus-section {
+  height: 50vh;
+}
+.Login-box h1 {
+  font-size: 4rem;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.contactUs-form label {
+  line-height: 5vh;
+}
 }
 
 @media screen and (max-width: 640px){
@@ -470,57 +380,60 @@ form {
     font-size: 1.2rem;
   }
 
-  .hiro-section h1 {
-    font-size: 2rem;
-  }
-  .footer-section {
-    background-color:#a4d5f4eb;
-    height: 15vh;
-    padding-top: 3vh;
-  }
-  
-  .flex-container {
-    list-style: none;
-    display: flex;
-    padding-left: 3vh;
-  }
-  
-  .flex-container img {
-    filter:grayscale(100%);
-  }
-  
-  .copyright p {
-    font-size: 1.5rem;
-  }
-  
-  /*contactus*/
-  .Login-box p {
-    font-size: 1.2rem;
-    padding-top: 1vh;
-  }
-  .Login-box {
-    grid-template-columns: 1fr;
-  }
+  /*Hiro Section*/
+.hiro-section  {
+  height: 30vh;
+}
 
-.Login-box h1 {
+.hiro-section h1 {
   font-size: 2rem;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-form {
-  width:80vw;
-  background-color: #a4d5f4eb;
-  border: 1px solid #1751ef;
-  padding-top: 1vh;
+/*Explore*/
+.Explore-section {
+  height: 30vh;
 }
 
-  /* Footer css properties */
-  .flex-container {
-    padding-left: 1vh;
-  }
+/* Footer css properties */
 
 .copyright p {
   font-size: 1rem;
+}
+
+/*contactus*/
+.contactus-section {
+  height: 35vh;
+}
+
+.Login-box {
+  grid-template-columns: 1fr;
+}
+
+.Login-box h1 {
+  display: none;
+}
+.Login-left p {
+  display: none;
+}
+
+form {
+  width:90vw;
+  background-color: #a4d5f4eb;
+  border: 1px solid #1751ef;
+}
+.contactUs-form label {
+  font-size: 1.2rem;
+  line-height: 3vh;
+}
+.contactUs-form input {
+  line-height: 3vh;
+}
+.contactUs-form textarea {
+  line-height: 3vh;
+}
+.contactUs-form button {
+  padding: 2px;
+  font-size: 1.3rem;
 }
 
 }

@@ -41,7 +41,7 @@ const Login = () => {
                     </div>
         
                     <div>
-                        <div className="contactUs-form p-1">
+                        <div className="contactUs-form">
                             {!submitted ? (
                             <form onSubmit= {handleSubmit}>
 

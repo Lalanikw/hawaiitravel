@@ -5,9 +5,9 @@
 }
 
 :root {
-  --primary-color: #2669b5;
-  --on-primary-color: #1dd51a;
-  --secondary-orange-color: #eafaea;
+  --primary-color: #5b71e0;
+  --on-primary-color: #be6fd9;
+  --secondary-orange-color: #ffb453;
   --secondary-light-orange-color: #eafaea;
   --highlight-dark-color: #0e1e6c;
   --highlight-light-color: var(--primary-color);
@@ -214,12 +214,10 @@ a:hover {
   height: 12vh;
   background-color:#a4d5f4eb;
 }
-/* .navlogo {
-  flex:1;
-  display: flex;
-  justify-content: center;
-  padding: 1%;
-} */
+.nav img {
+  padding: 1vh;
+  height: 15vh;
+}
 
 .topnav {
   display: flex;
@@ -237,7 +235,7 @@ a:hover {
 }
 
 .topnav a:hover {
-  background-color: #a4d5f4eb;
+  background-color: var(--on-primary-color);
   color: var(--highlight-light-color);
 }
 
@@ -265,7 +263,7 @@ a:hover {
 
 /* Footer css properties */
 .footer-section {
-  background-color:#a4d5f4eb;
+  background-color:#ffb453;
   height: 12vh;
   grid-template-columns: 1fr 2fr;
   padding-top: 3vh;
@@ -277,12 +275,13 @@ a:hover {
 }
 
 .flex-container img {
-  filter:grayscale(100%);
+  filter:grayscale(50%);
   width: 4vh;
 }
 
 .copyright p {
   font-size: 1.5rem;
+  color: #5b71e0;
 }
 
 /*contactus*/
@@ -339,6 +338,21 @@ form {
 @media screen and (max-width: 1007px) and (min-width: 641px){
   /*tablet */
 
+/* Navbar css style */
+.nav {
+  grid-template-columns: 1fr 2fr;
+}
+.nav img {
+  height: 12vh;
+}
+
+.topnav {
+  padding-top: 2vh;
+}
+
+.topnav li {
+  font-size: 1.2rem;
+}
 
   /*Hiro Section*/
 .hiro-section  {
@@ -357,28 +371,66 @@ form {
 /* Footer css properties */
 
 .copyright p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 /*contactus*/
 .contactus-section {
-  height: 50vh;
+  height: 40vh;
+  padding-bottom: 10vh;
+}
+
+.Login-box p {
+  font-size: 1.2rem;
+  padding: 1vw;
+  padding-top: 2.5vh;
 }
 .Login-box h1 {
-  font-size: 4rem;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 3rem;
+}
+
+form {
+  width:45vw;
+  background-color: #a4d5f4eb;
+  border: 1px solid #ffb453;
+  padding-top: 1vh;
 }
 
 .contactUs-form label {
-  line-height: 5vh;
+  font-size: 1rem;
+  line-height: 4vh;
+}
+.contactUs-form input {
+  line-height: 3vh;
+}
+.contactUs-form textarea {
+  line-height: 4vh;
+}
+
+.contactUs-form button {
+  padding: 3px;
+  font-size: 1rem;
 }
 }
 
 @media screen and (max-width: 640px){
   /* phone*/
-  .topnav li {
-    font-size: 1.2rem;
-  }
+
+  /* Navbar css style */
+.nav {
+  grid-template-columns: 1fr 3fr;
+}
+.nav img {
+  height: 9vh;
+}
+
+.topnav {
+  padding-top: 2vh;
+}
+
+.topnav li {
+  font-size: 0.9rem;
+}
 
   /*Hiro Section*/
 .hiro-section  {
@@ -386,7 +438,7 @@ form {
 }
 
 .hiro-section h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 /*Explore*/
@@ -397,43 +449,48 @@ form {
 /* Footer css properties */
 
 .copyright p {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 /*contactus*/
 .contactus-section {
-  height: 35vh;
+  height: 45vh;
+  padding-bottom: 10vh;
 }
 
 .Login-box {
   grid-template-columns: 1fr;
 }
 
-.Login-box h1 {
-  display: none;
+.Login-box p {
+  font-size: 1rem;
+  padding: 1vw;
+  padding-top: 1vh;
 }
-.Login-left p {
+.Login-box h1 {
   display: none;
 }
 
 form {
   width:90vw;
   background-color: #a4d5f4eb;
-  border: 1px solid #1751ef;
+  border: 1px solid #ffb453;
 }
+
 .contactUs-form label {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   line-height: 3vh;
 }
 .contactUs-form input {
-  line-height: 3vh;
+  line-height: 2vh;
 }
 .contactUs-form textarea {
   line-height: 3vh;
 }
+
 .contactUs-form button {
-  padding: 2px;
-  font-size: 1.3rem;
+  padding: 3px;
+  font-size: 1rem;
 }
 
 }

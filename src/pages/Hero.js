@@ -1,5 +1,3 @@
-import koko from "./koko.JPG";
-
 const Hero = () => {
     return (
         <div className="hiro-section">

@@ -243,7 +243,7 @@ a:hover {
 .hiro-section  {
   height: 50vh;
   background-size: cover;
-  background-image: url(./pages/koko.JPG);
+  background-image: url(./pages/Kokocrater.jpg);
 }
 
 .hiro-section h1 {
@@ -286,7 +286,7 @@ a:hover {
 
 /*contactus*/
 .contactus-section {
-  background-image: url(./pages/sunset.JPG);
+  background-image: url(./pages/orangesun.jpg);
   background-size: cover;
   height: 60vh;
   padding-bottom: 10vh;

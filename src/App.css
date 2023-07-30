@@ -401,6 +401,7 @@ a:hover {
   background-size: cover;
   height: 76vh;
 }
+
 .Login-box p {
   font-size: 1.5rem;
   padding: 1vw;
@@ -475,7 +476,6 @@ form {
   .footer-section {
     background-color:#a4d5f4eb;
     height: 15vh;
-    grid-template-columns: 1fr 2fr;
     padding-top: 3vh;
   }
   
@@ -496,25 +496,23 @@ form {
   /*contactus*/
   .Login-box p {
     font-size: 1.2rem;
-    padding-top: 1.5vh;
+    padding-top: 1vh;
   }
-  
-  .contactUs-form label {
-    font-size: 1.2rem;
-    line-height: 4vh;
+  .Login-box {
+    grid-template-columns: 1fr;
   }
-  .contactUs-form input {
-    line-height: 3vh;
-  }
-  .contactUs-form textarea {
-    line-height: 4vh;
-    width: 60%;
-  }
-  
-  .contactUs-form button {
-    padding: 5px;
-    font-size: 1.3rem;
-  }
+
+.Login-box h1 {
+  font-size: 2rem;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+form {
+  width:80vw;
+  background-color: #a4d5f4eb;
+  border: 1px solid #1751ef;
+  padding-top: 1vh;
+}
 
   /* Footer css properties */
   .flex-container {

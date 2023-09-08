@@ -5,7 +5,7 @@ import facebook from "./facebook.png";
 const Footer = () => {
   return (
     
-      <div className="footer-section grid-3">
+      <div className="footer-section">
           <div className="footer-logo">
             <ul class="flex-container">
               <li> <img src={facebook} alt="Facebook" /></li>

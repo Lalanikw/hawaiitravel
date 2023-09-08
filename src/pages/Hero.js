@@ -1,22 +1,23 @@
+import React from 'react';
+import ChatBot from '../components/ChatBot';
+import Carousel from '../components/Carousel';
+
 const Hero = () => {
     return (
-        <div className="hiro-section">
-            <h1>Welcome to Paradise</h1>
-            
-            {/* <div className="hiro-details">
-                <div className="hiro-details-left"> */}
-                    {/* <h3>Discover the magic of Hawaii, your ultimate resource for planning an extraordinary Hawaiian getaway. Whether you're seeking pristine beaches, breathtaking landscapes, vibrant culture, or thrilling outdoor adventures, we are here to turn your dreams into reality. 
-                    </h3> */}
-                    {/* <button>contact us</button> */}
-                {/* </div> */}
-                {/* <div className="hiro-details-right">
-                    <button>Explore Hawaii</button>
-                </div> */}
+        <div className="hero-back">
+            <div className="hero-section ">
+                <div className="hero-left">
+                    <Carousel/>
+                </div>
+                <div className="hero-text">
+                    <h1>Welcome To Hawaii</h1>
+                    <p>A dream destination that promises an unforgettable travel experience</p>
+                </div>
+                <ChatBot/>
+            </div>
 
-             {/* </div> */}
-            
         </div>
-    )
+    );
 };
 
 export default Hero;

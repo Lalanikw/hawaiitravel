@@ -1,13 +1,15 @@
 import Hero from './Hero';
-import Chat from './Chat';
+import Plan from './Plan';
+import Main from './Main';
+import ReactCalendar from '../components/calendar';
 
 const Home = () => {
     return(
-      <>
-      <p></p>
-      <p></p>
-        <Hero />
-      </>
+      <div>
+          <Hero/>
+          <Main/>
+          <Plan/>
+      </div>
       )
   };
 

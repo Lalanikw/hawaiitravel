@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import turtle from "./turtle.jpg";
 
 const Login = () => {
 
@@ -25,40 +26,36 @@ const Login = () => {
       //Set the submision status to true
       setSubmitted(true);
     }
-  
       return (
-        <div className="contactus-section p-1">
+        <div className="contactus-section">
             <div className="login text-center ">
-
-                <div className="Login-box grid-2">
+                <div className="Login-box">
                     <div className="Login-left ">
                         <p>We would love to hear from you! </p>
                         <p>If you have any questions about visiting Hawaii, please don't hesitate to contact our friendly team. </p>
-                        {/* <p> We are here to ensure that your Hawaiian dream becomes a reality. Join us on this 
-                            incredible journey to experience the wonders of Hawaii. </p> */}
+                        <p> We are here to ensure that your Hawaiian dream becomes a reality. Join us on this 
+                            incredible journey to experience the wonders of Hawaii. </p>
 
                             <h1>Mahalo</h1>
+                        <img src={turtle} alt="fire"></img>
                     </div>
-        
                     <div>
                         <div className="contactUs-form">
                             {!submitted ? (
                             <form onSubmit= {handleSubmit}>
-
-                            <div><label for="email">*Email</label></div>
-                            <div><input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)}/></div>
-                            
-        
-                            <div><label for="name">*First and Last name</label></div>
-                            <div><input type="name" id="name" value={name} onChange={(e) => setName(e.target.value)}/></div>
-        
-                            <div><label for="message">*Message</label></div>
-                            <div><textarea id="message" value={message} onChange={(e) => setmessage(e.target.value)} ></textarea></div>
-        
-                            {error && <div> {error} </div>}
-                            <div class="submit-btn-wrapper p-1 ">
-                            <button type="quote-btn">Submit</button>
-                            </div>
+                                <div><label for="email">*Email</label></div>
+                                <div><input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)}/></div>
+                                
+                                <div><label for="name">*First and Last name</label></div>
+                                <div><input type="name" id="name" value={name} onChange={(e) => setName(e.target.value)}/></div>
+            
+                                <div><label for="message">*Message</label></div>
+                                <div><textarea id="message" value={message} onChange={(e) => setmessage(e.target.value)} ></textarea></div>
+            
+                                {error && <div> {error} </div>}
+                                <div class="submit-btn-wrapper p-1 ">
+                                <button type="quote-btn">Submit</button>
+                                </div>
                             </form>
         
                         ) : (

@@ -78,7 +78,6 @@ a:hover {
 }
 .logo-text {
   display: flex;
-  /* background-color: #ffb453; */
 }
 .logo-text h1 {
   font-size: 3.8rem;
@@ -115,23 +114,17 @@ a:hover {
 
 /*Hero Section*/
 .hero-back {
-  padding-top: 3vh;
+  padding-top: 2vh;
 }
 .hero-section {
   background-color: #d7dcf2;
   position: relative;
-  height: 40vh;
-}
-.carousel {
-  padding-left: 1vw;
-  padding-top: -2vh;
-  position: relative;
-  top: -6vh;
+  height: 42vh;
 }
 .carousel-center{
   position: relative;
-  top: 38vh;
-  left:1vh;
+  top: 40vh;
+  left:0vh;
 }
 .Site-Carousel {
   display: flex;
@@ -139,10 +132,14 @@ a:hover {
   padding-top: 5vh;
 }
 .carousel {
-  width: 65%;
+  width: 70%;
   height: 50vh;
   justify-content: center;
   background-color: #d7dcf2;
+  padding-left: 0vw;
+  padding-top: -2vh;
+  position: relative;
+  top: -5vh;
 }
 .inner-carousel {
   height: 100%;
@@ -153,7 +150,7 @@ a:hover {
   display: flex;
 }
 .carousel-left {
-  flex: 5%;
+  flex: 2.5%;
   height: 100%;
   background-color:rgba(2, 19, 106, 0.6);
   font-size: 2vw;
@@ -162,7 +159,7 @@ a:hover {
   place-items: center;
 }
 .carousel-right {
-  flex: 5%;
+  flex: 2.5%;
   height: 100%;
   background-color:rgba(2, 19, 106, 0.6);
   font-size: 2vw;
@@ -171,45 +168,49 @@ a:hover {
   place-items: center;
 }
 .carousel-center {
-  flex: 80%;
+  flex: 85%;
   height: 100%;
 }
 .carousel-center p {
   color: #ffb453;
   font-size: 1.2rem;
   background-color: rgba(2, 19, 106, 0.6);
-  width: 70vh;
+  width: 85vh;
   padding-left: 2vh;
 }
 .carousel-center h1 {
   color:#c9a0d7;
-  font-size: 2rem;
+  font-size: 1.7rem;
   background-color:rgba(2, 19, 106, 0.6);
-  width: 70vh;
+  width: 85vh;
   padding-left: 2vh;
 }
 .hero-text p {
   padding-top: 2px;
   position: absolute;
-  top: 18vh;
-  left:70vw;
-  width: 22vw;
+  top: 22vh;
+  left:71vw;
+  width: 25vw;
   font-size: 1.7rem;
+}
+.hero-text h4 {
+  padding-left: 10px;
+  position: absolute;
+  top: 1vh;
+  left: 75vw;
+  width: 14vw;
+  font-size: 4.5rem;
+  font-family: var(--highlight-font);
+  color: #ffb453;
+  text-shadow: 0 0 20px #17204b;
 }
 .hero-text h1 {
   padding-top: 2px;
   position: absolute;
-  top: 2vh;
-  left:70vw;
-  font-size: 2.6rem;
-  width: 15vw;
-}
-.hero-right img {
-  width: 25vw;
-  height: auto;
-  position: relative;
-  left:2vw;
-  top:3vh;
+  top: 14vh;
+  left:71vw;
+  font-size: 2.5rem;
+  width: 27vw;
 }
 
 /*main section */
@@ -278,7 +279,7 @@ a:hover {
   width: 20vw;
   height: auto;
   position: absolute;
-  top:-7vh;
+  top:-4vh;
   left:72vw;
   z-index: 1;
 }
@@ -286,14 +287,14 @@ a:hover {
   width: 34vw;
   height: auto;
   position: absolute;
-  top:12vh;
+  top:18vh;
   left:48vw;
 }
 .plan-img3 img {
   width: 25vw;
   height: auto;
   position: absolute;
-  top:29vh;
+  top:33vh;
   left:21vw;
 }
 
@@ -311,11 +312,11 @@ a:hover {
 }
 .flex-container img {
   filter:grayscale(50%);
-  width: 6vh;
+  width: 8vh;
   padding-left: 1vw;
 }
 .copyright p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: #5b71e0;
 }
 
@@ -326,7 +327,7 @@ a:hover {
 }
 .Explore-section-text p {
   padding: 1vh;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 .Explore-section-text h1 {
   padding: 1vh;
@@ -340,7 +341,7 @@ a:hover {
 }
 .Explore-section p {
   width: 48vh;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 .Explore-section {
   padding-bottom: 2vh;
@@ -375,7 +376,7 @@ a:hover {
 /*contactus*/
 .contactus-section {
   background-color: #d7dcf2;
-  height: 110vh;
+  height: 140vh;
   padding-top: 2vh;
   position: relative;
   top: 2vh;
@@ -383,17 +384,18 @@ a:hover {
 .Login-box p {
   font-size: 1.7rem;
   padding: 1vw;
-  padding-top: 1vh;
+  padding-top: 0vh;
 }
 .Login-box h1 {
-  font-size: 4.5rem;
+  font-size: 4.0rem;
   padding-left: 12vw;
   font-family: var(--highlight-font);
   top: 5vh;
   position: relative;
+  text-shadow: 0 0 20px #ffb453;
 }
 .Login-left img {
-  height: 50vh;
+  height: 60vh;
   position: relative;
   top: 10vh;
   left: 15vh;
@@ -403,8 +405,8 @@ form {
   background-color:#5b71e0;
   padding: 1vh;
   position: relative;
-  left: 45vw;
-  top: -55vh;
+  left: 50vw;
+  top: -65vh;
   color:#ffb453;
 }
 .contactUs-form label {
@@ -433,7 +435,7 @@ form {
   background-color: #ffb453;
 }
 
-@media screen and (max-width: 1007px) and (min-width: 641px){
+@media screen and (max-width: 1025px) and (min-width: 641px){
   /*tablet */
 
 /* Navbar css style */
@@ -477,29 +479,15 @@ form {
 
 /*Hero Section*/
 .hero-back {
-  padding-top: 3vh;
+  padding-top: 2vh;
 }
 .hero-section {
   background-color: #d7dcf2;
   position: relative;
-  height: 40vh;
+  height: 38vh;
 }
 .carousel {
-  padding-left: 1vw;
-  padding-top: 1vh;
-}
-.carousel-center{
-  position: relative;
-  top: 38vh;
-  left:0vh;
-}
-.Site-Carousel {
-  display: flex;
-  justify-content: center;
-  padding-top: 4vh;
-}
-.carousel {
-  width: 62%;
+  width: 65%;
   height: 50vh;
   justify-content: center;
   background-color: #d7dcf2;
@@ -515,8 +503,8 @@ form {
 .carousel-left {
   flex: 5%;
   height: 100%;
-  background-color:rgba(2, 19, 106, 0.6);
-  font-size: 4vw;
+  background-color: rgba(2, 19, 106, 0.6);
+  font-size: 2vw;
   color: #ffb453;
   display: grid;
   place-items: center;
@@ -524,54 +512,56 @@ form {
 .carousel-right {
   flex: 5%;
   height: 100%;
-  background-color:rgba(2, 19, 106, 0.6);
-  font-size: 4vw;
+  background-color: rgba(2, 19, 106, 0.6);
+  font-size: 2vw;
   color: #ffb453;
   display: grid;
   place-items: center;
 }
 .carousel-center {
-  flex: 80%;
+  flex: 90%;
   height: 100%;
 }
 .carousel-center p {
   color: #ffb453;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   background-color: rgba(2, 19, 106, 0.6);
-  width: 40vh;
+  width: 42vh;
   padding-left: 2vh;
 }
 .carousel-center h1 {
   color:#c9a0d7;
-  font-size: 2rem;
+  font-size: 1.5rem;
   background-color:rgba(2, 19, 106, 0.6);
-  width: 40vh;
+  width: 42vh;
   padding-left: 2vh;
 }
 .hero-text p {
   padding-top: 2px;
   position: absolute;
-  top: 18vh;
+  top: 20vh;
   left:65vw;
-  width: 28vw;
+  width: 30vw;
   font-size: 1.5rem;
 }
-.hero-text h2 {
+.hero-text h4 {
+  padding-left: 10px;
+  position: absolute;
+  top: 1vh;
+  left: 68vw;
+  width: 14vw;
+  font-size: 4rem;
+  font-family: var(--highlight-font);
+  color: #ffb453;
+  text-shadow: 0 0 20px #17204b;
+}
+.hero-text h1 {
   padding-top: 2px;
   position: absolute;
-  top: 3vh;
+  top: 10vh;
   left:65vw;
   font-size: 2.2rem;
-  width: 20vw;
-}
-.hero-right img {
-  width: 25vw;
-  height: auto;
-  position: absolute;
-  left:72vw;
-  top:5vh;
-  outline: 2px solid #0e1e6c;
-  outline-offset: 2px;
+  width: 30vw;
 }
 
 /*main section */
@@ -692,41 +682,41 @@ form {
   color: #ffb453;
   font-size: 1.7rem;
   background-color: #7184e2;
-  width: 22vh;
+  width: 35vh;
 }
 .Explore-section p {
-  width: 22vh;
-  font-size: 1.4rem;
+  width: 35vh;
+  font-size: 1.3rem;
 }
 .Explore-section {
-  padding-bottom: 2vh;
-  padding-top:3vh;
-  grid-row-gap:5vh;
-  /* border: 2px solid #5b71e0; */
+  padding-bottom: 1vh;
+  padding-top:2vh;
+  grid-row-gap:3vh;
   display: grid;
   grid-template-areas: 
-  'Explore-Item1 Explore-Item3 Explore-Item4'
-  'Explore-Item1 Explore-Item3 Explore-Item4'
-  'Explore-Item2 Explore-Item5 Explore-Item6';
-}
-.Explore-section img {
-  width: 22vh;
+  'Explore-Item1 Explore-Item4 '
+  'Explore-Item1 Explore-Item4 '
+  'Explore-Item2 Explore-Item3 '
+  'Explore-Item5 Explore-Item6 ';
+
+}.Explore-section img {
+  width: 35vh;
 }
 .item1-text {
   position: absolute;
-  background-color:rgba(1, 19, 106, 0.4); /* Black background with 0.5 opacity */
-  color: #f1f1f1; /* Grey text */
-  width: 100%; /* Full width */
-  width: 22vh;
-  bottom: -20vh;
+  bottom: -5vh;
+  background-color: rgba(1, 19, 106, 0.4);
+  color: #f1f1f1;
+  width: 100%;
+  width: 35vh;
 }
 .item4-text {
   position: absolute;
-  bottom:-15vh;
-  background-color:rgba(1, 19, 106, 0.4); /* Black background with 0.5 opacity */
-  color: #f1f1f1; /* Grey text */
-  width: 100%; /* Full width */
-  width: 22vh;
+  bottom: -63vh;
+  background-color: rgba(1, 19, 106, 0.4);
+  color: #f1f1f1;
+  width: 100%;
+  width: 35vh;
 }
 
 /*contactus*/
@@ -859,7 +849,7 @@ form {
 }
 .carousel-center{
   position: relative;
-  top: 33vh;
+  top: 35vh;
   left:0vh;
 }
 .Site-Carousel {
@@ -905,7 +895,7 @@ form {
 }
 .carousel-center p {
   color: #ffb453;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   background-color: rgba(2, 19, 106, 0.6);
   width: 40vh;
   padding-left: 1vh;
@@ -933,6 +923,17 @@ form {
   left:5vw;
   font-size: 2.2rem;
   width: 100vw;
+}
+.hero-text h4 {
+  padding-left: 10px;
+  position: absolute;
+  top: -7vh;
+  left: 5vw;
+  width: 14vw;
+  font-size: 4rem;
+  font-family: var(--highlight-font);
+  color: #ffb453;
+  text-shadow: 0 0 20px #17204b;
 }
 .hero-text h1 {
   font-size: 2.5rem;
@@ -1116,7 +1117,7 @@ form {
   padding:0vh;
   justify-content: center;
   display: grid;
-  grid-row-gap: 3vh;
+  grid-row-gap: 5vh;
   grid-template-areas: 
   'Explore-Item3'
   'Explore-Item1'
@@ -1156,11 +1157,11 @@ form {
   background-color: rgba(1, 19, 106, 0.4);
   color: #f1f1f1;
   width: 100%;
-  bottom: -20vh;
+  bottom: -22vh;
 }
 .item4-text {
   position: absolute;
-  bottom: -154vh;
+  bottom: -159vh;
   background-color: rgba(1, 19, 106, 0.4);
   color: #f1f1f1;
   width: 100%;
@@ -1199,7 +1200,8 @@ form {
       transition: 0.3s ease-in-out;
     }
     #topnav.active {
-      right: 40vw;
+      right: 35vw;
+      top: 2vh;
     }
     #mobile {
       display: block;
@@ -1207,14 +1209,14 @@ form {
       padding-right: 2vw;
       padding-top: 1vh;
       position: relative;
-      left: -31vw;
+      left: -32vw;
     }
     #mobile i {
       cursor: pointer;
     }
     #topnav li {
       display: inline;
-      padding: 10px 14px;
+      padding: 6px 12px;
       text-decoration: none;
       font-size: 1.2rem;
       position: relative;
@@ -1241,7 +1243,7 @@ form {
         }
         .carousel-center {
           position: relative;
-          top: 30vh;
+          top: 35vh;
           left: 0vh;
         }
         .Site-Carousel {
@@ -1287,14 +1289,14 @@ form {
         }
         .carousel-center p {
           color: #ffb453;
-          font-size: 1rem;
+          font-size: 0.8rem;
           background-color: rgba(2, 19, 106, 0.6);
           width: 47vh;
           padding-left: 1vh;
         }
         .carousel-center h1 {
           color: #c9a0d7;
-          font-size: 1.4rem;
+          font-size: 1.0rem;
           background-color: rgba(2, 19, 106, 0.6);
           width: 47vh;
           padding-left: 1vh;
@@ -1307,6 +1309,17 @@ form {
           left: 5vw;
           width: 28vw;
           font-size: 1.5rem;
+        }
+        .hero-text h4 {
+          padding-left: 10px;
+          position: absolute;
+          top: -7vh;
+          left: 5vw;
+          width: 14vw;
+          font-size: 3rem;
+          font-family: var(--highlight-font);
+          color: #ffb453;
+          text-shadow: 0 0 20px #17204b;
         }
         .hero-text h2 {
           display: none;
@@ -1498,6 +1511,9 @@ form {
     background-color: #ffb453;
   }
 /*Explore*/
+/* .Explore-section-text {
+  height: 140vh;
+} */
 .Explore-section {
   padding: 0vh;
   justify-content: center;
@@ -1511,22 +1527,19 @@ form {
     'Explore-Item5'
     'Explore-Item6';
 }
-.Explore-menu {
-  padding-top: 0vh;
-}
 .Explore-section-text p {
   padding: 1vh;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .Explore-section h1 {
   color: #ffb453;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   background-color: #7184e2;
   width: 100%;
 }
 .Explore-section p {
   width: 100%;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .Explore-section img {
   width: 100%;
@@ -1542,11 +1555,11 @@ form {
   background-color: rgba(1, 19, 106, 0.4);
   color: #f1f1f1;
   width: 100%;
-  bottom: -45vh;
+  bottom: -44vh;
 }
 .item4-text {
   position: absolute;
-  bottom: -210vh;
+  bottom: -203vh;
   background-color: rgba(1, 19, 106, 0.4);
   color: #f1f1f1;
   width: 100%;

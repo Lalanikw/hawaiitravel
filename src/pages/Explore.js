@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link, Route, Routes} from "react-router-dom";
 import koko from "./images/Kokocrater.jpg";
 import coral from "./images/coral.jpg";
 import underwater from "./images/water.jpg";
@@ -28,12 +27,6 @@ const Explore = () => {
                <p>Hula, a mesmerizing form of storytelling that reflects the island's history, legands and connection to the land. As performers sway gracefully to the rhythm of the music, they share narratives of ancient Hawaii, celebrating the land, sea, and deities.  </p>
                <p></p>
                <p></p>
-                {/* <ul className='Explore-menu'>
-                     <li><Link to='/Food'>Food</Link></li>
-                     <li><Link to="/Event">Events and Shopping</Link></li>
-                     <li><Link to="/SSS">Sun, Sand & Sea</Link></li>
-                     <li><Link to="/Sites">Hikes & Site Visit</Link></li>
-                  </ul> */}
             </div>
             <div className='Explore-Item4'>
                <img src={oy1} alt='oy1'/>

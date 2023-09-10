@@ -28,8 +28,7 @@ const Login = () => {
     }
       return (
         <div className="contactus-section">
-            <div className="login text-center ">
-                <div className="Login-box">
+            <div className="Login-box">
                     <div className="Login-left ">
                         <p>We would love to hear from you! </p>
                         <p>If you have any questions about visiting Hawaii, please don't hesitate to contact our friendly team. </p>
@@ -39,33 +38,31 @@ const Login = () => {
                             <h1>Mahalo</h1>
                         <img src={turtle} alt="fire"></img>
                     </div>
-                    <div>
-                        <div className="contactUs-form">
-                            {!submitted ? (
-                            <form onSubmit= {handleSubmit}>
-                                <div><label for="email">*Email</label></div>
-                                <div><input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)}/></div>
-                                
-                                <div><label for="name">*First and Last name</label></div>
-                                <div><input type="name" id="name" value={name} onChange={(e) => setName(e.target.value)}/></div>
-            
-                                <div><label for="message">*Message</label></div>
-                                <div><textarea id="message" value={message} onChange={(e) => setmessage(e.target.value)} ></textarea></div>
-            
-                                {error && <div> {error} </div>}
-                                <div class="submit-btn-wrapper p-1 ">
-                                <button type="quote-btn">Submit</button>
-                                </div>
-                            </form>
+                    <div className="contactUs-form">
+                        {!submitted ? (
+                        <form onSubmit= {handleSubmit}>
+                            <div><label for="email">*Email</label></div>
+                            <div><input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)}/></div>
+                            
+                            <div><label for="name">*First and Last name</label></div>
+                            <div><input type="name" id="name" value={name} onChange={(e) => setName(e.target.value)}/></div>
         
-                        ) : (
-                            <div>
-                            <p>Thank you for submitting your message! We will get back to you soon. Mahalo! </p>
+                            <div><label for="message">*Message</label></div>
+                            <div><textarea id="message" value={message} onChange={(e) => setmessage(e.target.value)} ></textarea></div>
+        
+                            {error && <div> {error} </div>}
+                            <div class="submit-btn-wrapper p-1 ">
+                            <button type="quote-btn">Submit</button>
                             </div>
-                        ) }
+                        </form>
+
+                    ) : (
+                        <div className="contactUs-thanks">
+                                  <h3>Thank you for submitting your message.</h3>
+                                  <h4>We will get back to you soon.</h4>
                         </div>
+                    ) }
                     </div>
-                </div>
             </div>
         </div>
       );

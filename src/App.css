@@ -22,8 +22,6 @@
 
 /* Custom website CSS */
 @import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Klee+One:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
 
 body {
   margin: 0 auto;
@@ -381,7 +379,7 @@ a:hover {
   position: relative;
   top: 2vh;
 }
-.Login-box p {
+.Login-left p {
   font-size: 1.7rem;
   padding: 1vw;
   padding-top: 0vh;
@@ -433,6 +431,22 @@ form {
   border-radius: var(--radius);
   font-size: 1.5rem;
   background-color: #ffb453;
+}
+.contactUs-thanks h3 {
+  color: #5b71e0;
+  position: relative;
+  left: 45vw;
+  top: -45vh;
+  font-size: 2rem;
+  width: 50vw;
+}
+.contactUs-thanks h4 {
+  color: #5b71e0;
+    position: relative;
+    left: 55vw;
+    top: -40vh;
+    font-size: 1.5rem;
+    width: 50vw;
 }
 
 @media screen and (max-width: 1025px) and (min-width: 641px){
@@ -665,7 +679,7 @@ form {
   padding-left: 1vw;
 }
 .copyright p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: #5b71e0;
 }
 
@@ -725,8 +739,8 @@ form {
   height: 90vh;
 }
 .Login-box p {
-  font-size: 1.7rem;
-  padding: 1vw;
+  font-size: 1.6rem;
+  padding: 1.5vw;
   padding-top: 2vh;
 }
 .Login-box h1 {
@@ -740,7 +754,7 @@ form {
   left: 4vh;
 }
 form {
-  width:45vw;
+  width:43vw;
   background-color:#5b71e0;
   padding: 1vh;
   position: relative;
@@ -772,6 +786,23 @@ form {
   border-radius: var(--radius);
   font-size: 1.5rem;
   background-color: #ffb453;
+}
+.contactUs-thanks h3 {
+  color: #5b71e0;
+  position: relative;
+  left: 55vw;
+  top: -35vh;
+  font-size: 2rem;
+  width: 45vw;
+}
+
+.contactUs-thanks h4 {
+  color: #5b71e0;
+  position: relative;
+  left: 55vw;
+  top: -30vh;
+  font-size: 1.5rem;
+  width: 40vw;
 }
 }
 
@@ -1060,7 +1091,7 @@ form {
 /*contactus*/
 .contactus-section {
   background-color: #d7dcf2;
-  height: 100vh;
+  height: 52vh;
 }
 .Login-box p {
   font-size: 1.5rem;
@@ -1070,12 +1101,10 @@ form {
 .Login-box h1 {
   font-size: 3rem;
   padding-left: 30vw;
+  top: 30vh;
 }
 .Login-left img {
-  height: 40vh;
-  position: relative;
-  top: 40vh;
-  left: 8vh;
+  display: none;
 }
 form {
   width:90vw;
@@ -1083,7 +1112,7 @@ form {
   padding: 1vh;
   position: relative;
   left: 5vw;
-  top: -45vh;
+  top: -5vh;
   color:#ffb453;
 }
 .contactUs-form label {
@@ -1110,6 +1139,25 @@ form {
   border-radius: var(--radius);
   font-size: 1.5rem;
   background-color: #ffb453;
+}
+.contactUs-thanks h3 {
+  color: #5b71e0;
+  position: relative;
+  left: 0vw;
+  top: -6vh;
+  font-size: 1.5rem;
+  width: 100vw;
+  padding: 2vh;
+}
+
+.contactUs-thanks h4 {
+  color: #5b71e0;
+  position: relative;
+  left: 0vw;
+  top: -5vh;
+  font-size: 1.5rem;
+  width: 100vw;
+  padding: 5vh;
 }
 
 /*Explore*/
@@ -1453,63 +1501,82 @@ form {
       font-size: 1rem;
       color: #5b71e0;
     }
-  /*contactus*/
-  .contactus-section {
-    background-color: #d7dcf2;
-    height: 145vh;
-  }
-  .Login-box p {
-    font-size: 1.2rem;
-    padding: 1vw;
-    padding-top: 1vh;
-  }
-  .Login-box h1 {
-    font-size: 2.2rem;
-    padding-left: 30vw;
-    position: relative;
-    top: 2vh;
-  }
-  .Login-left img {
-    height: 60vh;
-    position: relative;
-    top: 55vh;
-    left: 6vh;
-  }
-  form {
-    width: 90vw;
-    background-color: #5b71e0;
-    padding: 1vh;
-    position: relative;
-    left: 5vw;
-    top: -55vh;
-    color: #ffb453;
-  }
-  .contactUs-form label {
-    text-align: left;
-    font-family: var(--secondary-font);
-    font-size: 1.3rem;
-    font-weight: bold;
-    line-height: 5vh;
-  }
-  .contactUs-form input {
-    line-height: 4vh;
-    width: 100%;
-    border-radius: var(--radius);
-  }
-  .contactUs-form textarea {
-    line-height: 5vh;
-    width: 100%;
-    border-radius: var(--radius);
-    padding-bottom: 1vh;
-  }
-
-  .contactUs-form button {
-    padding: 1vh;
-    width: 100%;
-    border-radius: var(--radius);
-    font-size: 1.5rem;
-    background-color: #ffb453;
-  }
+    /*contactus*/
+    .contactus-section {
+      background-color: #d7dcf2;
+      height: 100vh;
+    }
+    .Login-box p {
+      font-size: 1.3rem;
+      padding: 1vw;
+      padding-top: 1vh;
+    }
+    .Login-box h1 {
+      font-size: 3rem;
+      padding-left: 25vw;
+      top: 47vh;
+    }
+    .Login-left img {
+      display: none;
+    }
+    form {
+      width: 90vw;
+      background-color: #5b71e0;
+      padding: 1vh;
+      position: relative;
+      left: 5vw;
+      top: -10vh;
+      color: #ffb453;
+    }
+  
+    .contactUs-form label {
+      text-align: left;
+      font-family: var(--secondary-font);
+      font-size: 1.3rem;
+      font-weight: bold;
+      line-height: 5vh;
+    }
+  
+    .contactUs-form input {
+      line-height: 4vh;
+      width: 100%;
+      border-radius: var(--radius);
+    }
+  
+    .contactUs-form textarea {
+      line-height: 5vh;
+      width: 100%;
+      border-radius: var(--radius);
+      padding-bottom: 1vh;
+    }
+  
+    .contactUs-form button {
+      padding: 1vh;
+      width: 100%;
+      border-radius: var(--radius);
+      font-size: 1.5rem;
+      background-color: #ffb453;
+    }
+  
+    .contactUs-thanks h3 {
+      color: #5b71e0;
+      position: relative;
+      left: 0vw;
+      top: -6vh;
+      font-size: 1.5rem;
+      width: 100vw;
+      padding: 2vh;
+    }
+  
+    .contactUs-thanks h4 {
+      color: #5b71e0;
+      position: relative;
+      left: 0vw;
+      top: -5vh;
+      font-size: 1.5rem;
+      width: 100vw;
+      padding: 5vh;
+    }
 /*Explore*/
 /* .Explore-section-text {
   height: 140vh;

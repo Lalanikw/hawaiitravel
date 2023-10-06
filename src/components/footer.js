@@ -9,12 +9,12 @@ const Footer = () => {
           <div className="footer-logo">
             <ul class="flex-container">
               <li> <img src={facebook} alt="Facebook" /></li>
-              <li> <img src={youtube} alt="Facebook" /></li>
-              <li> <img src={insta} alt="Facebook" /></li>
+              <li> <img src={youtube} alt="YouTube" /></li>
+              <li> <img src={insta} alt="Instagram" /></li>
             </ul>
           </div>
             <div className="copyright">
-              <p> @ Hawaii Landing 2023. All rights reserved.
+              <p> @ Hawaii-Landing 2023. All rights reserved.
               </p>
             </div>
       </div>

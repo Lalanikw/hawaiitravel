@@ -4,11 +4,11 @@
   padding: 0;
 }
 :root {
-  --primary-color: #7184e2;
+  --primary-color: #062ce6;
   --on-primary-color: #c9a0d7;
-  --secondary-orange-color: #ffb453;
+  --secondary-orange-color: #fdc780;
   --secondary-light-orange-color: #fad6a7;
-  --highlight-dark-color: #7184e2;
+  --highlight-dark-color: #062ce6;
   --highlight-light-color: var(--primary-color);
   --radius: 16px;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -170,14 +170,14 @@ a:hover {
   height: 100%;
 }
 .carousel-center p {
-  color: #ffb453;
+  color: #f28b03;
   font-size: 1.2rem;
   background-color: rgba(2, 19, 106, 0.6);
   width: 85vh;
   padding-left: 2vh;
 }
 .carousel-center h1 {
-  color:#c9a0d7;
+  color:#e0cfe6;
   font-size: 1.7rem;
   background-color:rgba(2, 19, 106, 0.6);
   width: 85vh;
@@ -199,8 +199,8 @@ a:hover {
   width: 14vw;
   font-size: 4.5rem;
   font-family: var(--highlight-font);
-  color: #ffb453;
-  text-shadow: 0 0 20px #17204b;
+  color: #f68d05;
+  text-shadow: 0 10px 20px #cad0f0;
 }
 .hero-text h1 {
   padding-top: 2px;
@@ -219,6 +219,7 @@ a:hover {
 .main-section-left img {
   position: relative;
   top: 10vh;
+  width: auto;
   height: 50vh;
   left: 48vw;
   z-index: 1;
@@ -310,7 +311,8 @@ a:hover {
 }
 .flex-container img {
   filter:grayscale(50%);
-  width: 8vh;
+  width: auto;
+  height: 8vh;
   padding-left: 1vw;
 }
 .copyright p {
@@ -567,7 +569,7 @@ form {
   font-size: 4rem;
   font-family: var(--highlight-font);
   color: #ffb453;
-  text-shadow: 0 0 20px #17204b;
+  text-shadow: 0 0 20px #030f4b;
 }
 .hero-text h1 {
   padding-top: 2px;
@@ -613,7 +615,7 @@ form {
   font-size: 1.5rem;
   font-weight: bold;
   background-color:#ffb453;
-  color: #7184e2;
+  color: #062ae0;
   font-family: var(--secondary-font);
 }
 
@@ -680,7 +682,7 @@ form {
 }
 .copyright p {
   font-size: 1.4rem;
-  color: #5b71e0;
+  color: #0428dc;
 }
 
 /*Explore*/
@@ -1012,7 +1014,7 @@ form {
   font-size: 1.5rem;
   font-weight: bold;
   background-color: #ffb453;
-  color: #7184e2;
+  color: #062be2;
   font-family: var(--secondary-font);
 }
 
@@ -1062,7 +1064,7 @@ form {
     font-size: 1.5rem;
     font-weight: bold;
     background-color: #ffb453;
-    color: #7184e2;
+    color: #0428e0;
     font-family: var(--secondary-font);
 }
 
@@ -1336,7 +1338,7 @@ form {
           height: 100%;
         }
         .carousel-center p {
-          color: #ffb453;
+          color: #f98e02;
           font-size: 0.8rem;
           background-color: rgba(2, 19, 106, 0.6);
           width: 47vh;
@@ -1366,7 +1368,7 @@ form {
           width: 14vw;
           font-size: 3rem;
           font-family: var(--highlight-font);
-          color: #ffb453;
+          color: #fd9104;
           text-shadow: 0 0 20px #17204b;
         }
         .hero-text h2 {
@@ -1424,7 +1426,7 @@ form {
       font-size: 1.5rem;
       font-weight: bold;
       background-color: #ffb453;
-      color: #7184e2;
+      color: #0429e0;
       font-family: var(--secondary-font);
     }
     /*Plan*/
@@ -1476,7 +1478,7 @@ form {
       font-size: 1.5rem;
       font-weight: bold;
       background-color: #ffb453;
-      color: #7184e2;
+      color: #0329e3;
       font-family: var(--secondary-font);
     }
   
@@ -1499,7 +1501,7 @@ form {
     }
     .copyright p {
       font-size: 1rem;
-      color: #5b71e0;
+      color: #0227e0;
     }
     /*contactus*/
     .contactus-section {

@@ -8,9 +8,21 @@ const Footer = () => {
       <div className="footer-section">
           <div className="footer-logo">
             <ul class="flex-container">
-              <li> <img src={facebook} alt="Facebook" /></li>
-              <li> <img src={youtube} alt="YouTube" /></li>
-              <li> <img src={insta} alt="Instagram" /></li>
+          <li>
+            <a href=" " target="_blank" rel="noopener noreferrer">
+              <img src={facebook} alt="Facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@islandTube808" target="_blank" rel="noopener noreferrer">
+              <img src={youtube} alt="YouTube" />
+            </a>
+          </li>
+          <li>
+            <a href=" " target="_blank" rel="noopener noreferrer">
+              <img src={insta} alt="Instagram" />
+            </a>
+          </li>
             </ul>
           </div>
             <div className="copyright">

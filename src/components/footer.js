@@ -14,7 +14,7 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="https://www.youtube.com/@islandTube808" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.youtube.com/channel/UCfywvFdsGnl9g419UmelxjQ" target="_blank" rel="noopener noreferrer">
               <img src={youtube} alt="YouTube" />
             </a>
           </li>

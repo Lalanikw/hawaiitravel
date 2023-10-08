@@ -9,19 +9,19 @@ const Footer = () => {
           <div className="footer-logo">
             <ul class="flex-container">
           <li>
-            <a href=" " target="_blank" rel="noopener noreferrer">
-              <img src={facebook} alt="Facebook" />
-            </a>
+            {/* <a href=" " target="_blank" rel="noopener noreferrer">
+              <img src={facebook} alt="Facebook-icon" />
+            </a> */}
           </li>
           <li>
             <a href="https://www.youtube.com/channel/UCfywvFdsGnl9g419UmelxjQ" target="_blank" rel="noopener noreferrer">
-              <img src={youtube} alt="YouTube" />
+              <img src={youtube} alt="YouTube-icon" />
             </a>
           </li>
           <li>
-            <a href=" " target="_blank" rel="noopener noreferrer">
-              <img src={insta} alt="Instagram" />
-            </a>
+            {/* <a href=" " target="_blank" rel="noopener noreferrer">
+              <img src={insta} alt="Instagram-icon" />
+            </a> */}
           </li>
             </ul>
           </div>

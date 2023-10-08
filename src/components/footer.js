@@ -26,8 +26,8 @@ const Footer = () => {
             </ul>
           </div>
             <div className="copyright">
-              <p> @ Hawaii-Landing 2023. All rights reserved.
-              </p>
+              <h2> @ Hawaii-Landing 2023. All rights reserved.
+              </h2>
             </div>
       </div>
   )

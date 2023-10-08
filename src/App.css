@@ -27,7 +27,7 @@ body {
   margin: 0 auto;
 }
 h1 {
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   font-family: var(--secondary-font);
   color: var(--highlight-light-color);
   font-weight: 600;
@@ -55,7 +55,8 @@ a {
   font-weight: 550;
 }
 a:hover {
-  color:#ffb453;
+  color:#f28b05;
+  background-color: #0227e0;
 }
 .btn:disabled {
   border-radius: var(--radius);
@@ -65,7 +66,7 @@ a:hover {
   text-decoration: none;
   font-weight: 500;
   height: max-content;
-  box-shadow: var(--shadow)
+  box-shadow: var(--shadow);
 }
 
 /* Navbar css style */
@@ -87,6 +88,7 @@ a:hover {
 }
 .nav img {
   height: 18vh;
+  width: auto;
 }
 #topnav {
   display: flex;
@@ -101,13 +103,14 @@ a:hover {
   display: inline;
   padding: 14px 14px;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 2.5rem;
   position: relative;
   justify-content: space-between;
   color: var(--highlight-dark-color);
 }
 #topnav a:hover {
   color:#ffb453;
+  background-color: #0227e0;
 }
 
 /*Hero Section*/
@@ -130,7 +133,7 @@ a:hover {
   padding-top: 5vh;
 }
 .carousel {
-  width: 70%;
+  width: 65%;
   height: 50vh;
   justify-content: center;
   background-color: #d7dcf2;
@@ -503,7 +506,7 @@ form {
   height: 38vh;
 }
 .carousel {
-  width: 65%;
+  width: 63%;
   height: 50vh;
   justify-content: center;
   background-color: #d7dcf2;

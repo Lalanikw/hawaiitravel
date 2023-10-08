@@ -6,7 +6,7 @@
 :root {
   --primary-color: #062ce6;
   --on-primary-color: #c9a0d7;
-  --secondary-orange-color: #fdc780;
+  --secondary-orange-color: #f28b05;
   --secondary-light-orange-color: #fad6a7;
   --highlight-dark-color: #062ce6;
   --highlight-light-color: var(--primary-color);
@@ -55,7 +55,7 @@ a {
   font-weight: 550;
 }
 a:hover {
-  color:#f28b05;
+  color:var(--secondary-orange-color);
   background-color: #0227e0;
 }
 .btn:disabled {
@@ -81,7 +81,7 @@ a:hover {
 .logo-text h1 {
   font-size: 3.8rem;
   font-family: var(--highlight-font);
-  background-color: #ffb453;
+  color: var(--secondary-orange-color);
   height: 10vh;
   padding-left:1vh;
   padding-right:1vh;
@@ -109,7 +109,7 @@ a:hover {
   color: var(--highlight-dark-color);
 }
 #topnav a:hover {
-  color:#ffb453;
+  color: var(--secondary-orange-color);
   background-color: #0227e0;
 }
 
@@ -155,7 +155,7 @@ a:hover {
   height: 100%;
   background-color:rgba(2, 19, 106, 0.6);
   font-size: 2vw;
-  color: #ffb453;
+  color: var(--secondary-orange-color);
   display: grid;
   place-items: center;
 }
@@ -164,7 +164,7 @@ a:hover {
   height: 100%;
   background-color:rgba(2, 19, 106, 0.6);
   font-size: 2vw;
-  color: #ffb453;
+  color: var(--secondary-orange-color);
   display: grid;
   place-items: center;
 }
@@ -173,7 +173,7 @@ a:hover {
   height: 100%;
 }
 .carousel-center p {
-  color: #f28b03;
+  color: var(--secondary-orange-color);
   font-size: 1.2rem;
   background-color: rgba(2, 19, 106, 0.6);
   width: 85vh;
@@ -202,7 +202,7 @@ a:hover {
   width: 14vw;
   font-size: 4.5rem;
   font-family: var(--highlight-font);
-  color: #f68d05;
+  color: var(--secondary-orange-color);
   text-shadow: 0 10px 20px #cad0f0;
 }
 .hero-text h1 {
@@ -249,7 +249,7 @@ a:hover {
   padding: 1vw;
   font-size: 1.5rem;
   font-weight: bold;
-  background-color:#ffb453;
+  background-color:var(--secondary-orange-color);
   color: #7184e2;
   font-family: var(--secondary-font);
 }
@@ -410,7 +410,7 @@ form {
   position: relative;
   left: 50vw;
   top: -65vh;
-  color:#ffb453;
+  color: var(--secondary-orange-color);
 }
 .contactUs-form label {
   text-align: left;
@@ -435,7 +435,7 @@ form {
   width: 100%;
   border-radius: var(--radius);
   font-size: 1.5rem;
-  background-color: #ffb453;
+  background-color: var(--secondary-orange-color);
 }
 .contactUs-thanks h3 {
   color: #5b71e0;
@@ -465,7 +465,7 @@ form {
 }
 .logo-text {
   display: flex;
-  background-color: #ffb453;
+  background-color: var(--secondary-orange-color);
 }
 .logo-text h1 {
   display: none;
@@ -493,7 +493,7 @@ form {
   color: var(--highlight-dark-color);
 }
 #topnav a:hover {
-  color:#ffb453;
+  color: var(--secondary-orange-color);
 }
 
 /*Hero Section*/
@@ -524,7 +524,7 @@ form {
   height: 100%;
   background-color: rgba(2, 19, 106, 0.6);
   font-size: 2vw;
-  color: #ffb453;
+  color: var(--secondary-orange-color);
   display: grid;
   place-items: center;
 }
@@ -533,7 +533,7 @@ form {
   height: 100%;
   background-color: rgba(2, 19, 106, 0.6);
   font-size: 2vw;
-  color: #ffb453;
+  color: var(--secondary-orange-color);
   display: grid;
   place-items: center;
 }
@@ -542,7 +542,7 @@ form {
   height: 100%;
 }
 .carousel-center p {
-  color: #ffb453;
+  color: var(--secondary-orange-color);
   font-size: 1.2rem;
   background-color: rgba(2, 19, 106, 0.6);
   width: 42vh;
@@ -571,7 +571,7 @@ form {
   width: 14vw;
   font-size: 4rem;
   font-family: var(--highlight-font);
-  color: #ffb453;
+  color: var(--secondary-orange-color);
   text-shadow: 0 0 20px #030f4b;
 }
 .hero-text h1 {
@@ -617,7 +617,7 @@ form {
   padding: 1vw;
   font-size: 1.5rem;
   font-weight: bold;
-  background-color:#ffb453;
+  background-color:var(--secondary-orange-color);
   color: #062ae0;
   font-family: var(--secondary-font);
 }
@@ -698,7 +698,7 @@ form {
   font-size: 1.4rem;
 }
 .Explore-section h1 {
-  color: #ffb453;
+  color: var(--secondary-orange-color);
   font-size: 1.7rem;
   background-color: #7184e2;
   width: 35vh;
@@ -765,7 +765,7 @@ form {
   position: relative;
   left: 47vw;
   top: -42vh;
-  color:#ffb453;
+  color: var(--secondary-orange-color);
 }
 .contactUs-form label {
   text-align: left;
@@ -790,7 +790,7 @@ form {
   width: 100%;
   border-radius: var(--radius);
   font-size: 1.5rem;
-  background-color: #ffb453;
+  background-color: var(--secondary-orange-color);
 }
 .contactUs-thanks h3 {
   color: #5b71e0;
@@ -828,7 +828,7 @@ form {
   }
  .logo-text {
       display: flex;
-      background-color: #ffb453;
+      background-color:var(--secondary-orange-color);
     }
   #topnav {
     display: flex;
@@ -912,7 +912,7 @@ form {
   height: 100%;
   background-color:rgba(2, 19, 106, 0.6);
   font-size: 7vw;
-  color: #ffb453;
+  color: var(--secondary-orange-color);
   display: grid;
   place-items: center;
 }
@@ -921,7 +921,7 @@ form {
   height: 100%;
   background-color:rgba(2, 19, 106, 0.6);
   font-size: 7vw;
-  color: #ffb453;
+  color: var(--secondary-orange-color);
   display: grid;
   place-items: center;
 }
@@ -930,7 +930,7 @@ form {
   height: 100%;
 }
 .carousel-center p {
-  color: #ffb453;
+  color: var(--secondary-orange-color);
   font-size: 1.1rem;
   background-color: rgba(2, 19, 106, 0.6);
   width: 40vh;
@@ -968,7 +968,7 @@ form {
   width: 14vw;
   font-size: 4rem;
   font-family: var(--highlight-font);
-  color: #ffb453;
+  color: var(--secondary-orange-color);
   text-shadow: 0 0 20px #17204b;
 }
 .hero-text h1 {
@@ -1016,7 +1016,7 @@ form {
   padding: 1vw;
   font-size: 1.5rem;
   font-weight: bold;
-  background-color: #ffb453;
+  background-color:var(--secondary-orange-color);
   color: #062be2;
   font-family: var(--secondary-font);
 }
@@ -1066,7 +1066,7 @@ form {
   padding: 1vw;
     font-size: 1.5rem;
     font-weight: bold;
-    background-color: #ffb453;
+    background-color:var(--secondary-orange-color);
     color: #0428e0;
     font-family: var(--secondary-font);
 }
@@ -1118,7 +1118,7 @@ form {
   position: relative;
   left: 5vw;
   top: -5vh;
-  color:#ffb453;
+  color: var(--secondary-orange-color);
 }
 .contactUs-form label {
   text-align: left;
@@ -1143,7 +1143,7 @@ form {
   width: 100%;
   border-radius: var(--radius);
   font-size: 1.5rem;
-  background-color: #ffb453;
+  background-color: var(--secondary-orange-color);
 }
 .contactUs-thanks h3 {
   color: #5b71e0;
@@ -1187,7 +1187,7 @@ form {
   font-size: 1.2rem;
 }
 .Explore-section h1 {
-  color: #ffb453;
+  color: var(--secondary-orange-color);
   font-size: 1.5rem;
   background-color: #7184e2;
   width: 100%;
@@ -1238,7 +1238,7 @@ form {
     }
     .logo-text {
       display: flex;
-      background-color: #ffb453;
+      background-color: var(--secondary-orange-color);
     }
     #topnav {
       display: flex;
@@ -1323,7 +1323,7 @@ form {
           height: 100%;
           background-color: rgba(2, 19, 106, 0.6);
           font-size: 7vw;
-          color: #ffb453;
+          color: var(--secondary-orange-color);
           display: grid;
           place-items: center;
         }
@@ -1332,7 +1332,7 @@ form {
           height: 100%;
           background-color: rgba(2, 19, 106, 0.6);
           font-size: 7vw;
-          color: #ffb453;
+          color: var(--secondary-orange-color);
           display: grid;
           place-items: center;
         }
@@ -1341,7 +1341,7 @@ form {
           height: 100%;
         }
         .carousel-center p {
-          color: #f98e02;
+          color: var(--secondary-orange-color);
           font-size: 0.8rem;
           background-color: rgba(2, 19, 106, 0.6);
           width: 47vh;
@@ -1371,7 +1371,7 @@ form {
           width: 14vw;
           font-size: 3rem;
           font-family: var(--highlight-font);
-          color: #fd9104;
+          color: var(--secondary-orange-color);
           text-shadow: 0 0 20px #17204b;
         }
         .hero-text h2 {
@@ -1428,7 +1428,7 @@ form {
       padding: 1vw;
       font-size: 1.5rem;
       font-weight: bold;
-      background-color: #ffb453;
+      background-color: var(--secondary-orange-color);
       color: #0429e0;
       font-family: var(--secondary-font);
     }
@@ -1480,7 +1480,7 @@ form {
       padding: 1vw;
       font-size: 1.5rem;
       font-weight: bold;
-      background-color: #ffb453;
+      background-color: var(--secondary-orange-color);
       color: #0329e3;
       font-family: var(--secondary-font);
     }
@@ -1531,7 +1531,7 @@ form {
       position: relative;
       left: 5vw;
       top: -10vh;
-      color: #ffb453;
+      color: var(--secondary-orange-color);
     }
   
     .contactUs-form label {
@@ -1560,7 +1560,7 @@ form {
       width: 100%;
       border-radius: var(--radius);
       font-size: 1.5rem;
-      background-color: #ffb453;
+      background-color: var(--secondary-orange-color);
     }
   
     .contactUs-thanks h3 {
@@ -1604,7 +1604,7 @@ form {
   font-size: 1rem;
 }
 .Explore-section h1 {
-  color: #ffb453;
+  color: var(--secondary-orange-color);
   font-size: 1.1rem;
   background-color: #7184e2;
   width: 100%;

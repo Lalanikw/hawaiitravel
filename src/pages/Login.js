@@ -36,7 +36,7 @@ const Login = () => {
                             incredible journey to experience the wonders of Hawaii. </p>
 
                             <h1>Mahalo</h1>
-                        <img src={turtle} alt="fire"></img>
+                        <img src={turtle} alt="tutle-turleBay-beach"></img>
                     </div>
                     <div className="contactUs-form">
                         {!submitted ? (
@@ -58,8 +58,7 @@ const Login = () => {
 
                     ) : (
                         <div className="contactUs-thanks">
-                                  <h3>Thank you for submitting your message.</h3>
-                                  <h4>We will get back to you soon.</h4>
+                                  <h3>Thank you for submitting your message! We will get back to ASAP.</h3>
                         </div>
                     ) }
                     </div>

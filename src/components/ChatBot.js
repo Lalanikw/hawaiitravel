@@ -5,7 +5,6 @@ function ChatBot() {
 
   return (
     <div>
-      {/* Your other content */}
       <df-messenger
           intent="WELCOME"
           chat-title="Hana"

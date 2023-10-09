@@ -10,11 +10,12 @@ const Hero = () => {
                     <Carousel/>
                 </div>
                 <div className="hero-text">
-                    <h4>Aloha</h4>
+                    {/* <h4>Aloha</h4> */}
                     <h1>Welcome To Hawaii</h1>
-                    <p>A dream destination that promises an unforgettable travel experience</p>
+                    <h2>A dream destination that promises an unforgettable travel experience</h2>
                 </div>
-                <ChatBot/>
+                    <ChatBot />
+                
             </div>
 
         </div>

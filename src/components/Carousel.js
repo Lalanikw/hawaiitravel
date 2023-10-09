@@ -17,7 +17,7 @@ function Carousel() {
                 </div>
                 <div className='carousel-center'>
                     <h1>{images[currImg].title}</h1>
-                    <p>{images[currImg].subtitle}</p>
+                    <h3>{images[currImg].subtitle}</h3>
                 </div>
                 <div className='carousel-right' onClick={() => {
                     currImg <images.length - 1 && setCurrImg(currImg + 1);

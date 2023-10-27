@@ -3,68 +3,80 @@ import turtle from "./turtle.jpg";
 
 const Login = () => {
 
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setmessage] = useState('');
-    const [error, setError] = useState('');
-    const [submitted, setSubmitted] = useState('');
-  
-    const handleSubmit = (e) => {
-      e.preventDefault();
-  
-      if (!name || !email || !message) {
-        setError('Please fill in the fields');
-        return;
-      }
-      //clear form fields and error message
-  
-      setName('');
-      setEmail('');
-      setmessage('');
-      setError('');
-  
-      //Set the submision status to true
-      setSubmitted(true);
-    }
-      return (
-        <div className="contactus-section">
-            <div className="Login-box">
-                    <div className="Login-left ">
-                        <p>We would love to hear from you! </p>
-                        <p>If you have any questions about visiting Hawaii, please don't hesitate to contact our friendly team. </p>
-                        <p> We are here to ensure that your Hawaiian dream becomes a reality. Join us on this 
-                            incredible journey to experience the wonders of Hawaii. </p>
+  const [email, setEmail] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [message, setMessage] = useState('');
 
-                            <h1>Mahalo</h1>
-                        <img src={turtle} alt="tutle-turleBay-beach"></img>
-                    </div>
-                    <div className="contactUs-form">
-                        {!submitted ? (
-                        <form onSubmit= {handleSubmit}>
-                            <div><label for="email">*Email</label></div>
-                            <div><input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)}/></div>
-                            
-                            <div><label for="name">*First and Last name</label></div>
-                            <div><input type="name" id="name" value={name} onChange={(e) => setName(e.target.value)}/></div>
-        
-                            <div><label for="message">*Message</label></div>
-                            <div><textarea id="message" value={message} onChange={(e) => setmessage(e.target.value)} ></textarea></div>
-        
-                            {error && <div> {error} </div>}
-                            <div class="submit-btn-wrapper p-1 ">
-                            <button type="quote-btn">Submit</button>
-                            </div>
-                        </form>
+  const handleFirstNameChange = (e) => {
+    setFirstName(e.target.value);
+  };
+  const handleLastNameChange = (e) => {
+    setLastName(e.target.value);
+  };
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+  const handleMessageChange = (e) => {
+    setMessage(e.target.value);
+  };
 
-                    ) : (
-                        <div className="contactUs-thanks">
-                                  <h3>Thank you for submitting your message! We will get back to ASAP.</h3>
-                        </div>
-                    ) }
+    return (
+      <div className='login-box'>
+        <div className="Login-left ">
+          <h2>We would love to hear from you! </h2>
+          <br></br>
+                <p>If you have any questions about visiting Hawaii, please don't hesitate to contact our friendly team. </p>
+                <br></br><p> We are here to ensure that your Hawaiian dream becomes a reality. Join us on this
+                  incredible journey to experience the wonders of Hawaii. </p>
+              </div>
+        <div id="mc_embed_shell">
+          <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css" />
+          <div id="mc_embed_signup">
+
+            <form action="https://hawaiilanding.us13.list-manage.com/subscribe/post?u=24ef8c4a2bd503233358d5d94&amp;id=d0a8aa7445&amp;f_id=00ad31e5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+              <div id="mc_embed_signup_scroll">
+                {/* <h2>Contact Us</h2> */}
+
+                    <div className="indicates-required"><span className="asterisk">*</span> indicates required</div>
+
+                    <div className="mc-field-group">
+                        <label for="mce-EMAIL">Email Address <span className="asterisk">*</span></label>
+                        <input type="email" name="EMAIL" className="required email" id="mce-EMAIL" required="" value={email} onChange={handleEmailChange}/>
                     </div>
-            </div>
+                    <div className="mc-field-group">
+                        <label for="mce-FNAME" className="firstname">First Name </label>
+                        <input type="text" name="FNAME" className=" text" id="mce-FNAME" value={firstName} onChange={handleFirstNameChange}/>
+                    </div>
+                    <div className="mc-field-group">
+                        <label for="mce-LNAME">Last Name </label>
+                        <input type="text" name="LNAME" className=" text" id="mce-LNAME" value={lastName} onChange={handleLastNameChange}/>
+                    </div>
+                    <div className="mc-field-group">
+                        <label for="mce-MMERGE6">Message </label>
+                        <input type="text" name="MMERGE6" classname=" text" id="mce-MMERGE6" value={message} onChange={handleMessageChange} />
+
+                      </div>
+                
+                    <div id="mce-responses" classname="clear foot">
+                      <div classname="response" id="mce-error-response" style={{ display: 'none' }}></div>
+                      <div classname="response" id="mce-success-response" style={{ display: 'none' }}></div>
+                    </div>
+                    <div aria-hidden="true" style={{ position: 'absolute', left: '-5000px' }}>
+                      <input type="text" name="b_24ef8c4a2bd503233358d5d94_d0a8aa7445" tabindex="-1" value="" />
+                    </div>
+                    <div className="optionalParent">
+                      <div className="clear foot">
+                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" className="Contact-button" color="blue" value="Submit"  />
+                      </div>
+                    </div>
+              </div>
+            </form>
+          </div>
         </div>
-      );
+
+      </div>
+    );
   };
 
 export default Login;

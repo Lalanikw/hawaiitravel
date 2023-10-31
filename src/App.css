@@ -918,10 +918,10 @@ a {
   'Explore-Item6';
 }
 .Explore-section-text h2 {
-  padding: 0vh;
+  padding: 0.5vh;
   font-size: 1.3rem;
 }
-.Explore-section h2 {
+.Explore-section h3 {
   color: var(--secondary-orange-color);
   font-size: 1.875rem;
   background-color: #7184e2;
@@ -939,20 +939,6 @@ a {
 }
 .Explore-Item5 {
   padding-top: 0vh;
-}
-.item1-text {
-  position: absolute;
-  background-color: rgba(1, 19, 106, 0.4);
-  color: #f1f1f1;
-  bottom: -15vh;
-  width: 100%;
-}
-.item4-text {
-  position: absolute;
-  bottom: -134vh;
-  background-color: rgba(1, 19, 106, 0.4);
-  color: #f1f1f1;
-  width: 100%;
 }
 }
 

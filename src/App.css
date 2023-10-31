@@ -13,6 +13,7 @@
   --shadow: rgba(110, 130, 243, 0.2) 0px 7px 19px 0px;
   --highlight-font: 'Reggae One', serif;
   --secondary-font: 'Klee One', 'sarif';
+  --background:rgba(204, 255, 0, 0.7);
 }
 .container {
   display: block;
@@ -39,7 +40,7 @@ h2 {
   font-size: 1.7em;
   font-family: var(--secondary-font);
   font-weight: 500;
-  background-color: rgba(204, 255, 0, 0.8);
+  background-color: rgba(204, 255, 0, 0.7);
 }
 h3 {
   font-size: 1.3em;
@@ -88,8 +89,8 @@ a {
   padding: 4vh;
   width: 12vw;
   color: var(--highlight-light-color);
-  border: 15px solid var(--primary-color);
-  box-shadow: 125px 35px var(--primary-color);
+  border: 7px solid var(--primary-color);
+  box-shadow: 125px 35px var(--background);
   height: 25vh;
 }
 
@@ -112,7 +113,7 @@ a {
 .main-section-text {
   color: var(--highlight-light-color);
   border: 5px solid var(--primary-color);
-  box-shadow: 20px 85px var(--primary-color);
+  box-shadow: 20px 85px var(--background);
   width: 85%;
 }
 .main-section-text h1 {
@@ -131,7 +132,7 @@ a {
   top: 15vh;
   left: 1vh;
   border: 5px solid var(--primary-color);
-  box-shadow: 20px 15px var(--primary-color);
+  box-shadow: 20px 15px var(--background);
 }
 
 .inner-carousel {
@@ -202,7 +203,7 @@ a {
 .plan-text {
   position: relative;
   width: 90%;
-  top: 14vh;
+  top: 7vh;
   left: 2vw;
 }
 
@@ -217,7 +218,7 @@ a {
   width: 55vh;
   height: auto;
   border: 5px solid var(--primary-color);
-  box-shadow: 20px 27px var(--primary-color);
+  box-shadow: 20px 27px var(--background);
   position: relative;
   top: 1vh;
   left: 3vw;
@@ -294,7 +295,7 @@ a {
   margin-top: 2vh;
   margin-left: 2vh;
   border: 5px solid var(--primary-color);
-  box-shadow: 20px 27px var(--primary-color);
+  box-shadow: 20px 27px var(--background);
   background-color: rgba(218, 241, 136, 0.6);
   width: 90%;
 }

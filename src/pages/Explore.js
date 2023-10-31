@@ -5,6 +5,7 @@ import underwater from "./images/water.jpg";
 import event1 from "./images/event1.jpg";
 import oy1 from "./images/oy1.jpg";
 import temple from "./images/temple.jpg";
+import bottom from "./images/bottom.JPG";
 
 const Explore = () => {
 
@@ -51,7 +52,10 @@ const Explore = () => {
                <h2>Koko Crater</h2>
                <p>Reaching the summit of Koko Crater is a reward in itself. From this vantage point, you're treated to panoramic views that stretch across Oahu's stunning landscape. The turquoise waters of Hanauma Bay glisten in the distance, while the Pacific Ocean extends to the horizon. The sight of Diamond Head and the lush coastal terrain reminds you of the island's unique beauty.</p>
             </div>
-        </div>
+          </div>
+          {/* <div>
+             <img src={bottom} alt="surfers" />
+          </div> */}
       </div>
        );
 }

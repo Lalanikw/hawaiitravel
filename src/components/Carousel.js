@@ -16,7 +16,7 @@ function Carousel() {
                 <FontAwesomeIcon icon={faAngleLeft} />
                 </div>
                 <div className='carousel-center'>
-                    <h1>{images[currImg].title}</h1>
+                    <h2>{images[currImg].title}</h2>
                     <h3>{images[currImg].subtitle}</h3>
                 </div>
                 <div className='carousel-right' onClick={() => {

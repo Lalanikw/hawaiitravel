@@ -5,13 +5,14 @@ import facebook from "./facebook.png";
 const Footer = () => {
   return (
     
-      <div className="footer-section">
+    <div className="footer-section">
+         <div> </div>
           <div className="footer-logo">
             <ul class="flex-container">
           <li>
-            {/* <a href=" " target="_blank" rel="noopener noreferrer">
+            <a href="/" target="_blank" rel="noopener noreferrer">
               <img src={facebook} alt="Facebook-icon" />
-            </a> */}
+            </a>
           </li>
           <li>
             <a href="https://www.youtube.com/channel/UCfywvFdsGnl9g419UmelxjQ" target="_blank" rel="noopener noreferrer">
@@ -19,15 +20,15 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            {/* <a href=" " target="_blank" rel="noopener noreferrer">
+            <a href="/" target="_blank" rel="noopener noreferrer">
               <img src={insta} alt="Instagram-icon" />
-            </a> */}
+            </a>
           </li>
             </ul>
           </div>
             <div className="copyright">
-              <h2> @ Hawaii-Landing 2023. All rights reserved.
-              </h2>
+              <h1> @ Hawaii-Landing 2023. All rights reserved.
+              </h1>
             </div>
       </div>
   )

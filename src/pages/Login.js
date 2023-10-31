@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import turtle from "./turtle.jpg";
 
 const Login = () => {
 
@@ -27,8 +26,6 @@ const Login = () => {
           <h2>We would love to hear from you! </h2>
           <br></br>
                 <p>If you have any questions about visiting Hawaii, please don't hesitate to contact our friendly team. </p>
-                <br></br><p> We are here to ensure that your Hawaiian dream becomes a reality. Join us on this
-                  incredible journey to experience the wonders of Hawaii. </p>
               </div>
         <div id="mc_embed_shell">
           <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css" />
@@ -46,15 +43,15 @@ const Login = () => {
                     </div>
                     <div className="mc-field-group">
                         <label for="mce-FNAME" className="firstname">First Name </label>
-                        <input type="text" name="FNAME" className=" text" id="mce-FNAME" value={firstName} onChange={handleFirstNameChange}/>
+                        <input type="text" name="FNAME" className="first-name" id="mce-FNAME" value={firstName} onChange={handleFirstNameChange}/>
                     </div>
                     <div className="mc-field-group">
                         <label for="mce-LNAME">Last Name </label>
-                        <input type="text" name="LNAME" className=" text" id="mce-LNAME" value={lastName} onChange={handleLastNameChange}/>
+                        <input type="text" name="LNAME" className="last-name" id="mce-LNAME" value={lastName} onChange={handleLastNameChange}/>
                     </div>
                     <div className="mc-field-group">
                         <label for="mce-MMERGE6">Message </label>
-                        <input type="text" name="MMERGE6" classname=" text" id="mce-MMERGE6" value={message} onChange={handleMessageChange} />
+                        <input type="text" name="MMERGE6" classname="text" id="mce-MMERGE6" value={message} onChange={handleMessageChange} />
 
                       </div>
                 

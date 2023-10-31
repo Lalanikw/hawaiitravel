@@ -1,12 +1,11 @@
 :root {
-  --primary-color: #062ce6;
-  --on-primary-color: #9f0ad0;
-  --secondary-orange-color: #f28b05;
-  --secondary-light-orange-color: #f1c68c;
-  --highlight-dark-color: #062ce6;
-  --highlight-light-color: #c5cce9;
+  --primary-color: rgb(204, 255, 0);
+  --secondary-color: #0a366b;
+  --secondary-light-color: #0565a9;
+  --highlight-dark-color: rgba(24, 109, 67, 0.5);
+  --highlight-light-color: #0a366b;
   --radius: 16px;
-  --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --shadow: rgba(110, 130, 243, 0.2) 0px 7px 19px 0px;
   --highlight-font: 'Reggae One', serif;
   --secondary-font: 'Klee One', 'sarif';
 }
@@ -15,7 +14,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--secondary-light-orange-color);
+  background-color: var(--secondary-light-color);
+  box-shadow: var(--shadow);
+  width: 100%;
 }
 
 #topnav {
@@ -28,190 +29,184 @@ nav {
   list-style: none;
   padding: 0.7em 0.7em;
   position: relative;
-}
-
-#topnav li a {
-  text-decoration: none;
-  font-size: 2.5em;
-  font-weight: 1000;
-  transition: 0.3s ease-in-out;
+  line-height: 1em;
 }
 
 #topnav li a:hover,
 #topnav li a.active {
-  color: var(--secondary-orange-color);
+  border: 3px solid var(--primary-color);
+  box-shadow:5px 5px var(--primary-color) ;
 }
 
-#topnav li a:hover::after,
-#topnav li a.active::after {
-  content: "";
-  width: 30%;
-  height: 1vh;
-  position: absolute;
-  bottom: -0.25em;
-  left: 0.6em;
+#topnav li a {
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+  border-bottom: 3px solid transparent;
+  color: var(--primary-color);
 }
-
 #mobile {
   display: none;
   font-size: 2.5em;
 }
-
 #mobile i {
   color: var(--primary-color);
 }
 .logo-text {
   display: flex;
-  padding: 0.2em;
+  padding: 0.3em;
 }
-
+.logo-text img {
+  width: 8vw;
+  height: auto;
+  border-radius: 50%;
+  padding: 0.1em;
+}
 .logo-text h1 {
-  font-size: 3em;
+  font-size: 3.2em;
   font-family: var(--highlight-font);
   padding-top: 0.5em;
-  padding-right:0.1em;
+  padding-right:0.5em;
 }
 
-@media screen and (max-width: 1025px) and (min-width: 641px) {
-  #topnav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: fixed;
-    top: 125px;
-    right: -950px;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--highlight-light-color);
-    box-shadow: 0 40px 60px;
-    padding: 40px 0 0 10px;
-    transition: 0.4s ease-in-out;
-  }
+@media screen and (max-width: 1045px) and (min-width: 641px) {
 
-  #topnav.active {
-    right: 0px;
-    z-index: 2;
-  }
+    /*tablets*/
 
-  #mobile {
-    display: block;
-    font-size: 3em;
-    position: absolute;
-    left: 1em;
-  }
-
-  #topnav li {
-    margin-bottom: 25px;
-  }
-
-  #mobile li {
-    font-size: 2em;
-    cursor: pointer;
-  }
-
-  #topnav li a {
-    text-decoration: none;
-    font-size: 2.5em;
-    font-weight: bolder;
-    transition: 0.4s ease-in-out;
-    padding: 1em;
-  }
-    #topnav li a:hover::after,
-    #topnav li a.active::after {
-      content: "";
-      width: 30%;
-      height: 1vh;
-      background-color: blue;
-      position: absolute;
-      bottom: -0.25em;
-      left: 0.6em;
-    }
-
-    .logo-text {
-      display: flex;
-      padding: 0.2em;
-    }
-  
-    .logo-text h1 {
-      font-size: 3em;
-      font-family: var(--highlight-font);
-      padding-top: 0.5em;
-      padding-right: 0.1em;
-    }
-  }
-
-@media screen and (max-width: 640px) and (min-width:375px) {
       #topnav {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: flex-start;
-        position: fixed;
-        top: 95px;
-        right: -950px;
+        position: absolute;
+        top: 120px;
+        right: -1050px;
         width: 100vw;
-        height: 100vh;
+        height: 100%;
         background-color: var(--highlight-light-color);
-        box-shadow: 0 40px 60px;
-        padding: 40px 0 0 10px;
+        padding: 70px 0 0 20px;
         transition: 0.4s ease-in-out;
       }
-  
       #topnav.active {
         right: 0px;
         z-index: 2;
       }
-  
       #mobile {
         display: block;
-        font-size: 2.5em;
+        font-size: 3em;
         position: absolute;
-        left: 0.5em;
+        left: 1em;
+        overflow: hidden;
       }
-  
       #topnav li {
-        margin-bottom: 25px;
+        margin-bottom: 55px;
       }
-  
       #mobile li {
         font-size: 2em;
         cursor: pointer;
       }
-  
       #topnav li a {
         text-decoration: none;
-        font-size: 2em;
+        font-size: 2.7em;
         font-weight: bolder;
         transition: 0.4s ease-in-out;
-        padding: 0.5em;
       }
-  
-      #topnav li a:hover::after,
-      #topnav li a.active::after {
-        content: "";
-        width: 30%;
-        height: 1vh;
-        background-color: blue;
-        position: absolute;
-        bottom: -0.25em;
-        left: 0.6em;
+      #topnav li a:hover,
+      #topnav li a.active {
+        border: 3px solid var(--primary-color);
+        box-shadow: 2px 2px var(--primary-color);
       }
-  
       .logo-text {
         display: flex;
-        padding: 0.5em;
-      }
-  
-      .logo-text h1 {
-        font-size: 2.4em;
-        font-family: var(--highlight-font);
-        padding-top: 0.5em;
-        padding-right: 0.1em;
+        padding: 0.3em;
       }
       .logo-text img {
-        display: none;
+        width: 10vw;
+        height: auto;
+        border-radius: 50%;
       }
+      .logo-text h1 {
+        font-size: 3.2em;
+        font-family: var(--highlight-font);
+        padding-top: 0.1em;
+        padding-right: 0.3em;
+      }
+  }
+
+@media screen and (max-width: 640px) and (min-width:375px) {
+
+  /*big phones*/
+      #topnav {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          position: fixed;
+          top: 55px;
+          left: 100%;
+          width: 50%;
+          height: 100%;
+          background-color: var(--highlight-light-color);
+          padding: 70px 0 0 20px;
+          transition: 0.4s ease-in-out;
+        }
+      
+        #topnav.active {
+          left: 0px;
+          z-index: 2;
+        }
+        #topnav.collaped {
+          right: -450px;
+          pointer-events: none;
+        }
+      
+        #mobile {
+          display: block;
+          font-size: 2em;
+          position: absolute;
+          left: 0.5em;
+          overflow: hidden;
+        }
+      
+        #topnav li {
+          margin-bottom: 25px;
+        }
+        #mobile li {
+          font-size: 1.5em;
+          cursor: pointer;
+        }
+      
+        #topnav li a {
+          text-decoration: none;
+          font-size: 1.5em;
+          font-weight: bolder;
+          transition: 0.4s ease-in-out;
+        }
+      
+        #topnav li a:hover,
+        #topnav li a.active {
+          border: 3px solid var(--primary-color);
+          box-shadow: 2px 2px var(--primary-color);
+        }
+      
+        .logo-text {
+          display: flex;
+          padding: 0.2em;
+        }
+      
+        .logo-text img {
+          width: 10vw;
+          height: auto;
+          border-radius: 50%;
+        }
+      
+        .logo-text h1 {
+          font-size: 2em;
+          font-family: var(--highlight-font);
+          padding-top: 0.1em;
+          padding-right: 0.3em;
+        }
     }
 
 @media screen and (max-width: 374px) {
@@ -221,24 +216,24 @@ nav {
           align-items: flex-start;
           justify-content: flex-start;
           position: fixed;
-          top: 95px;
-          right: -950px;
+          top: 45px;
+          right: -600px;
           width: 100vw;
           height: 100vh;
           background-color: var(--highlight-light-color);
           box-shadow: 0 40px 60px;
-          padding: 40px 0 0 10px;
+          padding: 10px 0 0 10px;
           transition: 0.4s ease-in-out;
         }
       
         #topnav.active {
-          right: 0px;
+          right: 5px;
           z-index: 2;
         }
       
         #mobile {
           display: block;
-          font-size: 2em;
+          font-size: 1.5em;
           position: absolute;
           left: 0.5em;
         }
@@ -248,42 +243,33 @@ nav {
         }
       
         #mobile li {
-          font-size: 2em;
+          font-size: 1.7em;
           cursor: pointer;
         }
       
         #topnav li a {
           text-decoration: none;
-          font-size: 1.5em;
+          font-size: 1.7em;
           font-weight: bolder;
           transition: 0.4s ease-in-out;
-          padding: 0.25em;
-        }
-      
-        #topnav li a:hover::after,
-        #topnav li a.active::after {
-          content: "";
-          width: 30%;
-          height: 1vh;
-          background-color: blue;
-          position: absolute;
-          bottom: -0.25em;
-          left: 0.6em;
+          padding: 0.2em;
         }
       
         .logo-text {
           display: flex;
-          padding: 0.5em;
-        }
-      
-        .logo-text h1 {
-          font-size: 2em;
-          font-family: var(--highlight-font);
-          padding-top: 0.5em;
-          padding-right: 0.1em;
+          padding: 0.2em;
         }
       
         .logo-text img {
-          display: none;
+          width: 12vw;
+          height: auto;
+          border-radius: 50%;
+        }
+      
+        .logo-text h1 {
+          font-size: 1.5em;
+          font-family: var(--highlight-font);
+          padding-top: 0em;
+          padding-right: 0.2em;
         }
     }

@@ -15,13 +15,17 @@ render () {
   return (
     <>
     <nav className="nav">
-      <div><ul id="topnav"
-      className={this.state.clicked ?
-      "#topnav active" : "#topnav"}>
-        <li><Link to="/" onClick={this.handleClick}>Home</Link></li>
-        <li><Link to="/Explore" onClick={this.handleClick}>Explore-Hawaii </Link></li>
-        <li><Link to="/Login" onClick={this.handleClick}>ContactUs</Link></li>
-      </ul>
+        <div>
+          <ul id="topnav"
+              className={this.state.clicked ?
+              "#topnav active" : "#topnav"}>
+            <li>
+              <Link to="/"  onClick={this.handleClick}>Home</Link></li>
+            <li >
+              <Link to="/Explore"  onClick={this.handleClick}>Explore-Hawaii </Link></li>
+            <li >
+              <Link to="/Login" onClick={this.handleClick}>ContactUs</Link></li>
+          </ul>
       </div>
       <div id="mobile" onClick={this.handleClick}>
         <i id="bar" className= {this.state.clicked ?

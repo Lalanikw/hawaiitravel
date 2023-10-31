@@ -690,7 +690,7 @@ a {
   .main-section-text {
     color: var(--highlight-light-color);
     border: 5px solid var(--primary-color);
-    box-shadow: 20px 75px var(--primary-color);
+    box-shadow: 25px 85px var(--primary-color);
     width: 95%;
   }
 
@@ -700,7 +700,7 @@ a {
   }
 
   .main-section-right {
-    padding-left: 0vw;
+    padding-left: 0.1vw;
     padding-top: 18vh;
     width: 100%;
   }

@@ -1,6 +1,7 @@
 import youtube from "./youtube.png";
 import insta from "./instagram.png";
 import facebook from "./facebook.png";
+import './footer.css';
 
 const Footer = () => {
   return (

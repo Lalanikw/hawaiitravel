@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import Carousel from '../components/Carousel';
+import '../components/Carousel.css';
 
 const Main = () => {
     return(
       < div className='main-section'>
-        <div className='main-section-left'>
+                <div className='main-section-left'>
                   <Carousel/>
                   </div>
                 <div className='main-section-right'>

@@ -23,7 +23,7 @@ const Login = () => {
     return (
       <div className='login-box'>
         <div className="Login-left ">
-          <h2>We would love to hear from you! </h2>
+          <h2>We would love to hear from you  &#10024; </h2>
           <br></br>
                 <p>If you have any questions about visiting Hawaii, please don't hesitate to contact our friendly team. </p>
               </div>

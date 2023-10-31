@@ -1,0 +1,291 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: rgb(204, 255, 0);
+    --secondary-color: #0a366b;
+    --secondary-light-color: #0565a9;
+    --highlight-dark-color: rgba(24, 109, 67, 0.5);
+    --highlight-light-color: #0a366b;
+    --radius: 16px;
+    --shadow: rgba(110, 130, 243, 0.2) 0px 7px 19px 0px;
+    --highlight-font: 'Reggae One', serif;
+    --secondary-font: 'Klee One', 'sarif';
+    --background: rgba(204, 255, 0, 0.7);
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Custom website CSS */
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Reggae+One&display=swap');
+
+body {
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.6em;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    background-color: rgba(204, 255, 0, 0.7);
+}
+
+h3 {
+    font-size: 1.4em;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    background-color: rgba(204, 255, 0, 0.5);
+}
+
+p {
+    font-size: 1.1em;
+    font-family: var(--secondary-font);
+    line-height: 1.3em;
+    font-weight: 450;
+}
+
+.carousel {
+    width: 80%;
+    height: 40vh;
+    justify-content: center;
+    position: relative;
+    top: 15vh;
+    left: 1vh;
+    border: 5px solid var(--primary-color);
+    box-shadow: 10px 10px var(--highlight-light-color);
+}
+
+.inner-carousel {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.carousel-left {
+    flex: 3%;
+    height: 100%;
+    background-color: rgba(218, 241, 136, 0.6);
+    font-size: 2vw;
+    color: var(--secondary-color);
+    display: grid;
+    place-items: center;
+}
+
+.carousel-right {
+    flex: 3%;
+    height: 100%;
+    font-size: 2vw;
+    background-color: rgba(218, 241, 136, 0.6);
+    color: var(--secondary-color);
+    display: grid;
+    place-items: center;
+}
+
+.carousel-center {
+    flex: 80%;
+    height: 100%;
+}
+
+.carousel-center h3 {
+    color: var(--secondary-orange-color);
+    background-color: rgba(2, 19, 106, 0.6);
+    display: none;
+}
+
+.carousel-center h2 {
+    color: var(--primary-color);
+    background-color: rgba(2, 19, 106, 0.3);
+}
+
+@media screen and (max-width: 1045px) and (min-width: 641px) {
+
+    /*tablet*/
+    .carousel {
+        width: 97%;
+        height: 30vh;
+        justify-content: center;
+        position: relative;
+        top: 20vh;
+    }
+    .inner-carousel {
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+    }
+    .carousel-left {
+        flex: 3%;
+        height: 100%;
+        background-color: rgba(218, 241, 136, 0.6);
+        font-size: 5vw;
+        color: var(--secondary-color);
+        display: grid;
+        place-items: center;
+    }
+
+    .carousel-right {
+        flex: 3%;
+        height: 100%;
+        font-size: 5vw;
+        background-color: rgba(218, 241, 136, 0.6);
+        color: var(--secondary-color);
+        display: grid;
+        place-items: center;
+    }
+
+    .carousel-center {
+        flex: 80%;
+        height: 100%;
+    }
+
+    .carousel-center h3 {
+        color: var(--secondary-orange-color);
+        background-color: rgba(2, 19, 106, 0.6);
+        display: none;
+    }
+
+    .carousel-center h2 {
+        color: var(--primary-color);
+        background-color: rgba(2, 19, 106, 0.3);
+    }
+
+}
+
+@media screen and (max-width: 640px) and (min-width:375px) {
+    /* big phone*/
+.carousel {
+        width: 90%;
+        height: 30vh;
+        justify-content: center;
+        position: relative;
+        top: 5vh;
+    }
+
+    .inner-carousel {
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+    }
+
+    .carousel-left {
+        flex: 3%;
+        height: 100%;
+        background-color: rgba(218, 241, 136, 0.6);
+        font-size: 5vw;
+        color: var(--secondary-color);
+        display: grid;
+        place-items: center;
+    }
+
+    .carousel-right {
+        flex: 3%;
+        height: 100%;
+        font-size: 5vw;
+        background-color: rgba(218, 241, 136, 0.6);
+        color: var(--secondary-color);
+        display: grid;
+        place-items: center;
+    }
+
+    .carousel-center {
+        flex: 80%;
+        height: 100%;
+    }
+
+    .carousel-center h3 {
+        color: var(--secondary-orange-color);
+        background-color: rgba(2, 19, 106, 0.6);
+        display: none;
+    }
+
+    .carousel-center h2 {
+        color: var(--primary-color);
+        background-color: rgba(2, 19, 106, 0.3);
+    }
+
+}
+
+
+@media screen and (max-width: 374px) {
+    /* small phone*/
+.carousel {
+        width: 90%;
+        height: 30vh;
+        justify-content: center;
+        position: relative;
+        top: 5vh;
+        border: 5px solid var(--primary-color);
+        box-shadow: 5px 5px var(--background);
+
+    }
+
+    .inner-carousel {
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+    }
+
+    .carousel-left {
+        flex: 3%;
+        height: 100%;
+        background-color: rgba(218, 241, 136, 0.6);
+        font-size: 5vw;
+        color: var(--secondary-color);
+        display: grid;
+        place-items: center;
+    }
+
+    .carousel-right {
+        flex: 3%;
+        height: 100%;
+        font-size: 5vw;
+        background-color: rgba(218, 241, 136, 0.6);
+        color: var(--secondary-color);
+        display: grid;
+        place-items: center;
+    }
+
+    .carousel-center {
+        flex: 80%;
+        height: 100%;
+    }
+
+    .carousel-center h3 {
+        color: var(--secondary-orange-color);
+        background-color: rgba(2, 19, 106, 0.6);
+        display: none;
+    }
+
+    .carousel-center h2 {
+        color: var(--primary-color);
+        background-color: rgba(2, 19, 106, 0.3);
+    }
+
+}

@@ -101,7 +101,7 @@ a {
 .main-section-left {
   padding-left: 0vw;
   width: 100%;
-  padding-top: 15vh;
+  padding-top: 25vh;
 }
 .main-section-right {
   position: relative;
@@ -361,14 +361,14 @@ a {
   
     .hero-text h1 {
       margin: 0.25em;
-      font-size: 2em;
+      font-size: 3em;
       padding: 1vh;
       width: 15vw;
       color: var(--highlight-light-color);
       border: 10px solid var(--primary-color);
-      box-shadow: 55px 15px var(--background);
+      box-shadow: 65px 25px var(--background);
       background-color: rgba(218, 241, 136, 0.7);
-      height: 7vh;
+      height: 10vh;
       position: relative;
       top: -2vh;
     }
@@ -376,19 +376,29 @@ a {
     /*main section */
     .main-section {
       position: relative;
-      top: 1vh;
+      top: 20vh;
       padding-left: 0.5em;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
     }
+    .main-section-left {
+      padding-left: 0vw;
+      margin-left: 1.5vh;
+      width: 100%;
+      padding-top: 15vh;
+    }
   
     .main-section-text {
       color: var(--highlight-light-color);
-      border: 5px solid var(--primary-color);
-      box-shadow: 7px 70px var(--background);
+      border: none;
+      box-shadow: none;
       width: 95%;
     }
+        .main-section-right button {
+          position: relative;
+          top: -1vh;
+        }
   
     .main-section-text h1,
     h3 {
@@ -396,11 +406,10 @@ a {
     }
   
     .main-section-right {
-      padding-left: 0vw;
-      padding-top: 15vh;
+      padding-left: 2vw;
+      padding-top: 20vh;
       width: 100%;
     }
-  
     .carousel {
       width: 90%;
       height: 30vh;
@@ -480,9 +489,13 @@ a {
     .plan-text {
       position: relative;
       width: 98%;
-      top: 22vh;
+      top: 45vh;
       left: 1vw;
     }
+        .plan-text button {
+          position: relative;
+          top: -1vh;
+        }
   
     .plan-text h1 {
       background-color: var(--highlight-light-color);
@@ -499,7 +512,7 @@ a {
       border: 5px solid var(--primary-color);
       box-shadow: 20px 27px var(--primary-color);
       position: relative;
-      top: 17vh;
+      top: 41vh;
       left: 15vw;
     }
   
@@ -509,7 +522,7 @@ a {
       display: grid;
       grid-template-columns: 1fr 1fr 2fr;
       position: relative;
-      top: 20vh;
+      top: 45vh;
       left: 0hv;
       background-color: var(--highlight-light-color);
       z-index: -1;
@@ -686,13 +699,22 @@ a {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
+    .main-section-left {
+      padding-left: 0vw;
+      width: 100%;
+      padding-top: 15vh;
+    }
 
   .main-section-text {
     color: var(--highlight-light-color);
-    border: 5px solid var(--primary-color);
-    box-shadow: 25px 85px var(--primary-color);
     width: 95%;
+    border: none;
+    box-shadow: none;
   }
+    .main-section-right button {
+      position: relative;
+      top: -1vh;
+    }
 
   .main-section-text h1,
   h3 {
@@ -784,9 +806,13 @@ a {
     .plan-text {
       position: relative;
       width: 98%;
-      top: 42vh;
+      top: 30vh;
       left: 1vw;
     }
+        .plan-text button {
+          position: relative;
+          top: -2vh;
+        }
   
     .plan-text h1 {
       background-color: var(--highlight-light-color);
@@ -798,12 +824,12 @@ a {
     }
 
     .plan-image img {
-      width: 45vh;
+      width: 40vh;
       height: auto;
       border: 5px solid var(--primary-color);
       box-shadow: 20px 27px var(--primary-color);
       position: relative;
-      top: 42vh;
+      top: 30vh;
       left: 1vw;
     }
 
@@ -875,13 +901,13 @@ a {
 #mc_embed_shell {
   padding-left: 0.1vh;
   position: relative;
-  top: -5vh;
+  top: 1vh;
 }
 #mc_embed_signup {
   width: 240%;
   margin: 0.2em;
   border: 5px solid var(--primary-color);
-    box-shadow: 20px 27px var(--primary-color);
+  box-shadow: 20px 27px var(--background);
 }
 
 #mc_embed_signup_scroll {

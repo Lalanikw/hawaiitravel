@@ -658,7 +658,7 @@ a {
   }
 
 /*Hero Section*/
-.hero-text {
+  .hero-text {
     position: relative;
     top: 0vh;
   }
@@ -696,7 +696,7 @@ a {
 
   .main-section-text h1,
   h3 {
-    padding: 0.12em;
+    padding: 0.2em;
   }
 
   .main-section-right {

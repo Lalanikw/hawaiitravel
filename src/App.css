@@ -86,24 +86,22 @@ a {
   left: 1vh;
 }
 .hero-text h1 {
-  font-size: 4em;
+  font-size: 5em;
   padding: 1vh;
   width: 11vw;
-  color: var(--primary-color);
-  background-color: var(--highlight-light-color);
-  border: 5px solid var(--primary-color);
+  color: var(--highlight-light-color);
+  font-family: var(--highlight-font);
   height: 14vh;
 }
 .hero-text h2 {
   font-size: 4em;
-  padding: 1vh;
+  padding: 2vh;
   width: 16vw;
-  color: var(--primary-color);
-  background-color: var(--highlight-light-color);
-  border: 5px solid var(--primary-color);
-  height: 14vh;
+  color: var(--highlight-light-color);
+  font-family: var(--highlight-font);
+  height: 15vh;
   margin-left: 4vh;
-  margin-top: -2vh;
+  margin-top: -3vh;
 }
 
 /*main section */
@@ -304,9 +302,8 @@ a {
           font-size: 3.6em;
           padding: 0.5vh;
           width: 14vw;
-          color: var(--primary-color);
-          background-color: var(--highlight-light-color);
-          border: 5px solid var(--primary-color);
+          color: var(--highlight-light-color);
+            font-family: var(--highlight-font);
           height: 8vh;
         }
     
@@ -314,9 +311,8 @@ a {
           font-size: 3.6em;
           padding: 0.5vh;
           width: 20vw;
-          color: var(--primary-color);
-          background-color: var(--highlight-light-color);
-          border: 5px solid var(--primary-color);
+          color: var(--highlight-light-color);
+            font-family: var(--highlight-font);
           height: 8vh;
           margin-left: 4vh;
           margin-top: -1vh;
@@ -519,22 +515,21 @@ a {
       font-size: 3em;
       padding: 1vh;
       width: 16vw;
-      color: var(--primary-color);
-      background-color: var(--highlight-light-color);
-      border: 5px solid var(--primary-color);
+      color: var(--highlight-light-color);
+      font-family: var(--highlight-font);
       height: 11vh;
     }
   
     .hero-text h2 {
       font-size: 3em;
-      padding: 1vh;
-      width: 23vw;
+      padding: 2vh;
+      width: 21vw;
       color: var(--primary-color);
-      background-color: var(--highlight-light-color);
-      border: 5px solid var(--primary-color);
-      height: 11vh;
+      color: var(--highlight-light-color);
+        font-family: var(--highlight-font);
+      height: 8vh;
       margin-left: 4vh;
-      margin-top: -2vh;
+      margin-top: -7vh;
     }
 
   /*main section */
@@ -735,22 +730,20 @@ a {
           font-size: 2em;
           padding: 0.2vh;
           width: 18vw;
-          color: var(--primary-color);
-          background-color: var(--highlight-light-color);
-          border: 3px solid var(--primary-color);
+          color: var(--highlight-light-color);
+            font-family: var(--highlight-font);
           height: 7vh;
         }
 
         .hero-text h2 {
           font-size: 2em;
-          padding: 0vh;
-          width: 26vw;
-          color: var(--primary-color);
-          background-color: var(--highlight-light-color);
-          border: 3px solid var(--primary-color);
-          height: 7vh;
-          margin-left: 4vh;
-          margin-top: -1vh;
+          padding: 3vh;
+          width: 25vw;
+          color: var(--highlight-light-color);
+            font-family: var(--highlight-font);
+          height: 8vh;
+          margin-left: 2vh;
+          margin-top: -6vh;
         }
         
           /*main section */

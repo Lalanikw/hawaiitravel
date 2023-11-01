@@ -88,6 +88,7 @@ nav {
         background-color: var(--highlight-light-color);
         padding: 70px 0 0 20px;
         transition: 0.4s ease-in-out;
+
       }
       #topnav.active {
         right: 0px;
@@ -157,11 +158,6 @@ nav {
           left: 0px;
           z-index: 2;
         }
-        #topnav.collaped {
-          right: -450px;
-          pointer-events: none;
-        }
-      
         #mobile {
           display: block;
           font-size: 2.5em;
@@ -230,10 +226,8 @@ nav {
         left: 0px;
         z-index: 2;
       }
-    
-      #topnav.collaped {
-        right: -450px;
-        pointer-events: none;
+      #topnav.hidden {
+        display: none;
       }
     
       #mobile {

@@ -18,7 +18,7 @@ render () {
         <div>
           <ul id="topnav"
               className={this.state.clicked ?
-              "#topnav active" : "#topnav"}>
+              "#topnav active" : "#topnav hidden"}>
             <li>
               <Link to="/"  onClick={this.handleClick}>Home</Link></li>
             <li >

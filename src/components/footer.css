@@ -46,9 +46,9 @@ p {
     color: var(--primary-color);
 }
 
-@media screen and (max-width: 1045px) and (min-width: 641px) {
+@media screen and (max-width: 1279px) and (min-width: 769px) {
 
-/*tablet */
+/*lap top */
 /* Footer css properties */
     .footer-section {
         height: 12vh;
@@ -59,7 +59,7 @@ p {
         left: 0hv;
         background-color: var(--highlight-light-color);
         z-index: -1;
-        padding-top: 0.5vh;
+        padding-top: 3vh;
     }
 
     .flex-container {
@@ -82,20 +82,19 @@ p {
 
 }
 
-@media screen and (max-width: 640px) and (min-width:375px) {
-    /* big phone*/
+@media screen and (max-width: 768px) and (min-width:481px) {
+    /* tablet*/
 /* Footer css properties */
     .footer-section {
-        height: 12vh;
+        height: 10vh;
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        position: relative;
-        top: 20vh;
+        grid-template-columns: 0fr 1fr 2fr;
+        top: 21vh;
         left: 0hv;
         background-color: var(--highlight-light-color);
-        z-index: -1;
-        padding-top: 0.5vh;
+        z-index: 0;
+        padding-top: 2vh;
+        position: relative;
     }
 
     .flex-container {
@@ -111,8 +110,43 @@ p {
         padding-left: 0vw;
     }
 
-    .copyright h1 {
+    .copyright p {
         font-size: 1.2em;
         padding: 0vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /* phone*/
+    /* Footer css properties */
+    .footer-section {
+        height: 12vh;
+        display: grid;
+        grid-template-columns: 0fr 1fr 1fr;
+        position: relative;
+        top: 20vh;
+        left: 0hv;
+        background-color: var(--highlight-light-color);
+        z-index: -1;
+        padding-top: 3vh;
+    }
+
+    .flex-container {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .flex-container img {
+        filter: grayscale(50%);
+        width: auto;
+        height: 6vh;
+        padding-left: 0vw;
+    }
+
+    .copyright p {
+        font-size: 1em;
+        padding: 0.5vh;
     }
 }

@@ -116,15 +116,15 @@ p {
     background-color: rgba(2, 19, 106, 0.3);
 }
 
-@media screen and (max-width: 1045px) and (min-width: 641px) {
+@media screen and (max-width: 1279px) and (min-width: 769px) {
 
-    /*tablet*/
+    /*Laptop*/
     .carousel {
         width: 97%;
         height: 30vh;
         justify-content: center;
         position: relative;
-        top: 20vh;
+        top: 35vh;
     }
     .inner-carousel {
         height: 100%;
@@ -172,14 +172,14 @@ p {
 
 }
 
-@media screen and (max-width: 640px) and (min-width:375px) {
-    /* big phone*/
+@media screen and (max-width: 768px) and (min-width:481px) {
+    /* Tablet*/
 .carousel {
         width: 90%;
         height: 30vh;
-        justify-content: center;
         position: relative;
         top: 5vh;
+        left: 2vh;
     }
 
     .inner-carousel {
@@ -229,18 +229,14 @@ p {
 
 }
 
-
-@media screen and (max-width: 374px) {
-    /* small phone*/
+@media screen and (max-width: 480px) {
+    /* phone*/
 .carousel {
-        width: 90%;
-        height: 30vh;
-        justify-content: center;
-        position: relative;
-        top: 5vh;
-        border: 5px solid var(--primary-color);
-        box-shadow: 5px 5px var(--background);
-
+                width: 92%;
+                height: 30vh;
+                position: relative;
+                top: 5vh;
+                left: 1vh;
     }
 
     .inner-carousel {

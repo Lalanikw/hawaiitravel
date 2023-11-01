@@ -71,9 +71,9 @@ nav {
   padding-right:0.5em;
 }
 
-@media screen and (max-width: 1045px) and (min-width: 641px) {
+@media screen and (max-width: 1279px) and (min-width: 769px) {
 
-    /*tablets*/
+    /*laptop*/
 
       #topnav {
         display: flex;
@@ -135,18 +135,18 @@ nav {
       }
   }
 
-@media screen and (max-width: 640px) and (min-width:375px) {
+@media screen and (max-width: 768px) and (min-width:481px) {
 
-  /*big phones*/
+  /*tablet*/
       #topnav {
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: flex-start;
           position: fixed;
-          top: 55px;
+          top: 12vh;
           left: 100%;
-          width: 100%;
+          width: 99%;
           height: 100%;
           background-color: var(--highlight-light-color);
           padding: 70px 0 0 20px;
@@ -164,7 +164,7 @@ nav {
       
         #mobile {
           display: block;
-          font-size: 2em;
+          font-size: 2.5em;
           position: absolute;
           left: 0.5em;
           overflow: hidden;
@@ -180,7 +180,7 @@ nav {
       
         #topnav li a {
           text-decoration: none;
-          font-size: 1.5em;
+          font-size: 2em;
           font-weight: bolder;
           transition: 0.4s ease-in-out;
         }
@@ -197,80 +197,90 @@ nav {
         }
       
         .logo-text img {
-          width: 15vw;
+          width: 14vw;
           height: auto;
           border-radius: 50%;
         }
       
         .logo-text h1 {
-          font-size: 2em;
+          font-size: 2.5em;
           font-family: var(--highlight-font);
-          padding-top: 0.1em;
-          padding-right: 0.3em;
+          padding-top: 1em;
+          padding-right: 3em;
         }
     }
 
-@media screen and (max-width: 374px) {
-      #topnav {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: flex-start;
-          position: fixed;
-          top: 45px;
-          right: -600px;
-          width: 100vw;
-          height: 100vh;
-          background-color: var(--highlight-light-color);
-          box-shadow: 0 40px 60px;
-          padding: 10px 0 0 10px;
-          transition: 0.4s ease-in-out;
-        }
-      
-        #topnav.active {
-          right: 5px;
-          z-index: 2;
-        }
-      
-        #mobile {
-          display: block;
-          font-size: 1.5em;
-          position: absolute;
-          left: 0.5em;
-        }
-      
-        #topnav li {
-          margin-bottom: 25px;
-        }
-      
-        #mobile li {
-          font-size: 1.7em;
-          cursor: pointer;
-        }
-      
-        #topnav li a {
-          text-decoration: none;
-          font-size: 1.7em;
-          font-weight: bolder;
-          transition: 0.4s ease-in-out;
-          padding: 0.2em;
-        }
-      
-        .logo-text {
-          display: flex;
-          padding: 0.2em;
-        }
-      
-        .logo-text img {
-          width: 12vw;
-          height: auto;
-          border-radius: 50%;
-        }
-      
-        .logo-text h1 {
-          font-size: 1.5em;
-          font-family: var(--highlight-font);
-          padding-top: 0em;
-          padding-right: 0.2em;
-        }
+@media screen and (max-width: 480px) {
+    #topnav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: absolute;
+        top: 7vh;
+        left: 100%;
+        width: 99%;
+        height: 100%;
+        background-color: var(--highlight-light-color);
+        padding: 20px 0 0 10px;
+        transition: 0.4s ease-in-out;
+      }
+    
+      #topnav.active {
+        left: 0px;
+        z-index: 2;
+      }
+    
+      #topnav.collaped {
+        right: -450px;
+        pointer-events: none;
+      }
+    
+      #mobile {
+        display: block;
+        font-size: 2em;
+        position: absolute;
+        left: 0.5em;
+        overflow: hidden;
+      }
+    
+      #topnav li {
+        margin-bottom: 25px;
+      }
+    
+      #mobile li {
+        font-size: 1.5em;
+        cursor: pointer;
+      }
+    
+      #topnav li a {
+        text-decoration: none;
+        font-size: 2em;
+        font-weight: bolder;
+        transition: 0.4s ease-in-out;
+      }
+    
+      #topnav li a:hover,
+      #topnav li a.active {
+        border: 3px solid var(--primary-color);
+        box-shadow: 2px 2px var(--background);
+      }
+    
+      .logo-text {
+        display: flex;
+        padding: 0.2em;
+      }
+    
+      .logo-text img {
+        width: 12vw;
+        height: auto;
+        border-radius: 50%;
+      }
+    
+      .logo-text h1 {
+        font-size: 2em;
+        font-family: var(--highlight-font);
+        padding-top: 0.5em;
+        padding-right: 1em;
+      }
     }

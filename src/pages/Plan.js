@@ -1,26 +1,26 @@
 import { Link } from 'react-router-dom';
-import fire from "./fire.jpg";
 
 const Plan = () => {
     return(
       <div className="plan-back">
 
-            <div className="plan-text-section">
-                  <div className='plan-text'>
-                        <h1>Let's plan your dream vacation</h1>
-                        <h3>We will take you on a journey through the enchanting islands of Hawaii, exploring its unique attractions, must-visit locations, and insider tips to make the most of your trip. </h3>
-                        <h3>Contact us for iterinaries, inquiries about local events and tips. </h3>
-                        </div>
-                    <div>
-                      <Link to="/Login">
-                        <button to="/ContactUs" className='main-button'> ContactUs &#10132; </button>
+        <div className="plan-top">
+              <div className='plan-text'>
+                  <h1>Excape to Hawaii, where paradise meets the adventure &#127802; </h1>
+                  <h3>Picture yourself on sun-kissed beaches, the soft, golden sand between your toes, and the
+                    soothing sound of waves in the background.
+                    Explore lush rainforests, hike to breathtaking viewpoints, and discover vibrant marine life while snorkeling in crystal
+                      clear waters.</h3>
+                    <h3>Immerse yourself in the captavating hula performance and relish the island's unique cuisine. </h3>
+                  <div>
+                      <Link to="/Explore">
+                        <button to="/src/pages/Explore.js" className='Plan-button'> Explore Hawaii &#10132; </button>
                       </Link>
-                  </div>
-                    
-            </div>
-            <div className='plan-image'>
-                          <img src={fire} alt="fire-pole" />
-            </div>
+                    </div>    
+                </div>
+            
+        </div>
+
       </div>
 
       )

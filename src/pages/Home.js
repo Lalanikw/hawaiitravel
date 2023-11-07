@@ -1,13 +1,15 @@
 import Hero from './Hero';
 import Plan from './Plan';
-import Main from './Main';
+import Video from '../components/Video';
+import Bottom from './Bottom';
 
 const Home = () => {
     return(
       <div className='home'>
-          <Hero/>
-          <Main/>
-          <Plan/>
+        <Video/>
+        <Hero/>
+        <Plan />
+        <Bottom/>
       </div>
       )
   };

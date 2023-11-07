@@ -54,32 +54,25 @@ p {
         height: 12vh;
         display: grid;
         grid-template-columns: 1fr 1fr 2fr;
-        position: relative;
-        top: 45vh;
-        left: 0hv;
         background-color: var(--highlight-light-color);
         z-index: -1;
         padding-top: 3vh;
     }
-
     .flex-container {
         list-style: none;
         display: flex;
         justify-content: center;
     }
-
     .flex-container img {
         filter: grayscale(50%);
         width: auto;
         height: 6vh;
         padding-left: 0vw;
     }
-
     .copyright p {
         font-size: 1em;
         padding-top: 3vh;
     }
-
 }
 
 @media screen and (max-width: 768px) and (min-width:481px) {

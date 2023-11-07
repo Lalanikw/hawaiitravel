@@ -3,8 +3,6 @@ import koko from "../pages/Sites/koko.JPG";
 import Waikiki from "../pages/Sites/Waikiki.JPG";
 import hanauma from "../pages/Sites/hanauma.jpg";
 import surf from "../pages/Sites/surf.JPG";
-// import sunset from "../pages/Sites/sunset.JPG";
-
 
 export const images = [
     {title:"Waikiki Beach", subtitle:"Honolulu shoreline with gentle waves, ideal for beginners and sunbathers.", img:beach},

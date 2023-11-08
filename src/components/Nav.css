@@ -18,6 +18,7 @@ nav {
   background-color: hsla(214, 39%, 42%, 0.6);
   box-shadow: var(--shadow);
   width: 100%;
+  z-index: 99;
 }
 nav:hover {
   background-color: hsl(213, 83%, 23%, 0.8);

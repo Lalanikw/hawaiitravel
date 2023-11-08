@@ -6,10 +6,7 @@ function Video() {
 
   return (
       <div className='video'>
-         <video autoPlay loop muted>
-              <source src={videoSource} type='video/mp4'/>
-          </video>
-      
+         <video src={videoSource} autoPlay loop muted /> 
     </div>
   )
 }

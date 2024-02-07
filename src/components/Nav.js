@@ -33,7 +33,7 @@ render () {
       </div>
       <div className="logo-text">
           <h1>Hawaii Landing</h1>
-        <img src={logo} alt="site-logo"/>
+        <img src={logo} alt="site-logo" />
       </div>
     </nav>
     </>

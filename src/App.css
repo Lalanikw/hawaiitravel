@@ -1,10 +1,10 @@
 *, *:before, *:after{
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   margin: 0;
   padding: 0;
 }
 :root {
-  --primary-color: rgb(204, 255, 0);
+  --primary-color: rgb(231, 246, 169);
   --secondary-color: #0a366b;
   --secondary-light-color: #0565a9;
   --highlight-dark-color: rgba(24, 109, 67, 0.5);
@@ -13,7 +13,7 @@
   --shadow: rgba(110, 130, 243, 0.2) 0px 7px 19px 0px;
   --highlight-font: 'Reggae One', serif;
   --secondary-font: 'Klee One', 'sarif';
-  --background:rgba(204, 255, 0, 0.7);
+  --background:rgba(167, 179, 119, 0.7);
 }
 
 .container {
@@ -39,7 +39,7 @@ h2 {
   font-size: 1.6em;
   font-family: var(--secondary-font);
   font-weight: 500;
-  background-color: rgba(204, 255, 0, 0.7);
+ 
 }
 h3 {
   font-size: 1.4em;
@@ -142,7 +142,7 @@ a {
 }
 .plan-bottom-pics {
   width: 100%;
-  padding-left:1em;
+  
 }
 
 
@@ -492,6 +492,8 @@ a {
 .plan-bottom-pics {
   width: 100%;
   padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*contactus*/
@@ -664,8 +666,8 @@ a {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
-      padding-top: 2vh;
-      column-gap: 1vh;
+      margin-left: auto;
+      margin-right: auto;
     }
   
     .plan-bottom-text h1 {
@@ -690,7 +692,9 @@ a {
   
     .plan-bottom-pics {
       width: 100%;
-      padding: 1em;
+      margin-left: auto;
+      margin-right: auto;
+      padding:0px;
     }
   /*contactus*/
   .login-box {
